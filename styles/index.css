@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Tentei deixar um pouco responsivo, usando %*/
+body{
+    background-color: rgba(0, 183, 255, 0.2);
+    width: 100%;
+    height: 100%;
+}
+img{
+    object-fit: fill;
+}
+.Container{
+    padding: 2% 2% 2% 2%;
+    width: 95vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+#Main_Header{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    background-color: white;
+}
+#Logo{
+    display: flex;
+    width: 30%;
+    height: 100%;
+}
+#logo_name{
+    font-size: 3vw;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+}
+#navigation{
+    width: 45%;
+    height: 100%;
+}
+#navigation_options{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+#navigation_options p{
+    color: black;
+    font-size: 1.5vw;
+    margin-left: 9%;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    border-bottom:  solid black 1px;
+}
+#navigation_help{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+#navigation_help p{
+
+    color: black;
+    font-size: 1.5vw;
+    margin-left: 15%;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    border-bottom:  solid black 1px;
+}
+#divimglogin{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+}
+#login{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+}
+#login img{
+    background-color: rgba(192,192,192,0.5);
+    width: 70%;
+    height: 100%;
+    border-radius: 50% 50% 50% 50%;
+}
+#login p{
+    color: black;
+    font-size: 1.5vw;
+    text-align: center;
+}
+#area_carrinho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+#area_carrinho img{
+    width: 60%;
+    height: 60%;
+}
+#area_carrinho p{
+    font-size: 1.2vw;
+    width: fit-content;
+    height: fit-content;
+}
+#categorias{
+    align-content: flex-start;
+    display: flex;
+    height: 85%;
+    width: 35%;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: greenyellow;
+}
+#search_categoria{
+    margin-top: 10%;
+    display: flex;
+    color: black;
+    width: 80%;
+    height: fit-content;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10%;
+    
+}
+#search_categoria p{
+    padding-top: 2%;
+    text-align: justify;
+    color: black;
+    font-size: 1vw;
+    width: fit-content;
+    height: fit-content;
+}
+#search_categoria img{
+    width: 10%;
+    height: 7%;
+}
+#tipo_categoria{
+    width: 100%;
+    height: 50%;
+    margin-top: 5%;
+}
+#Area_livros{
+    overflow-x: auto;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 65%;
+    height: 85%;
+}
+#search_livro{
+    display: flex;
+    background-color: rgba(0, 255, 0, 0.2);
+    margin-top: 3%;
+    width: 90%;
+    height: 5%;
+}
+#img_lupa_livro{
+    height: 100%;
+    width: 5%;
+}
+#text_procurar_livro{
+    font-size: 1.5vw;
+    padding-left: 4%;
+    word-spacing: 15px;
+}
+.conjunto_de_livros{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+    width: 90%;
+    height: 25%;
+    /*background-color: rgba(0, 183, 255, 0.2);*/
+}
+.livro{
+    width: 15%;
+    height: 100%;
+    background-color: aqua;
+}
+.livro img{
+    width: 100%;
+    height: 75%;
+    object-fit: fill;
+}
+.estrelas{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 12%;
+}
+.estrelas img{
+    width: 20%;
+    height: 100%;
+}
+.preco{
+    width: 100%;
+    height: fit-content;
+    font-size: 1vw;
+    text-align: center;
+}
+#rodapé{
+    width: 100%;
+    height: 15%;
+    background-color: blue;
+}
+
