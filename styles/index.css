@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
 }
-/*Tentei deixar um pouco responsivo, usando %*/
 body{
     background-color: rgba(0, 183, 255, 0.2);
     width: 100%;
     height: 100%;
+    background-color: rebeccapurple;
+
 }
 img{
     object-fit: fill;
@@ -17,11 +18,12 @@ img{
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    min-width: 1300px;
 }
 #Main_Header{
     display: flex;
     width: 100%;
-    height: 15%;
+    height: 150px;
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: black;
@@ -33,7 +35,7 @@ img{
     height: 100%;
 }
 #logo_name{
-    font-size: 3vw;
+    font-size: max(35px,3vw);
     height: fit-content;
     width: fit-content;
     display: flex;
@@ -49,7 +51,7 @@ img{
 }
 #navigation_options p{
     color: black;
-    font-size: 1.5vw;
+    font-size: max(18px,1.5vw);
     margin-left: 9%;
     text-align: center;
     width: fit-content;
@@ -64,7 +66,7 @@ img{
 #navigation_help p{
 
     color: black;
-    font-size: 1.5vw;
+    font-size: max(18px,1.5vw);
     margin-left: 15%;
     text-align: center;
     width: fit-content;
@@ -92,7 +94,7 @@ img{
 }
 #login p{
     color: black;
-    font-size: 1.5vw;
+    font-size:  max(18px,1.5vw);
     text-align: center;
 }
 #area_carrinho{
@@ -107,19 +109,23 @@ img{
     height: 60%;
 }
 #area_carrinho p{
-    font-size: 1.2vw;
+    font-size:  max(15px,1.2vw);
     width: fit-content;
     height: fit-content;
+}
+#main_content{
+    display: flex;
+    width: 100%;
+    height: auto;
 }
 #categorias{
     align-content: flex-start;
     display: flex;
-    height: 85%;
+    height: 100%;
     width: 35%;
     justify-content: center;
     flex-wrap: wrap;
-    flex-direction: row;
-    background-color: greenyellow;
+    background-color: red;
 }
 #search_categoria{
     margin-top: 10%;
@@ -136,7 +142,7 @@ img{
     padding-top: 2%;
     text-align: justify;
     color: black;
-    font-size: 1vw;
+    font-size:  max(12px,1vw);;
     width: fit-content;
     height: fit-content;
 }
@@ -156,7 +162,7 @@ img{
     flex-wrap: wrap;
     align-content: flex-start;
     width: 65%;
-    height: 85%;
+    height: fit-content;
 }
 #search_livro{
     display: flex;
@@ -170,7 +176,7 @@ img{
     width: 5%;
 }
 #text_procurar_livro{
-    font-size: 1.5vw;
+    font-size: max(18px,1.5vw);
     padding-left: 4%;
     word-spacing: 15px;
 }
