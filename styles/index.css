@@ -3,11 +3,14 @@
     padding: 0;
 }
 body{
-    background-color: rgba(0, 183, 255, 0.2);
+    background-color: white;
     width: 100%;
     height: 100%;
-    background-color: rebeccapurple;
 
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 img{
     object-fit: fill;
@@ -35,6 +38,7 @@ img{
     height: 100%;
 }
 #logo_name{
+    margin-top: 5%;
     font-size: max(35px,3vw);
     height: fit-content;
     width: fit-content;
@@ -114,6 +118,7 @@ img{
     height: fit-content;
 }
 #main_content{
+    background-color: rgba(0, 0, 255, 0.3);
     display: flex;
     width: 100%;
     height: auto;
@@ -125,18 +130,18 @@ img{
     width: 35%;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: red;
 }
 #search_categoria{
     margin-top: 10%;
     display: flex;
-    color: black;
-    width: 80%;
+    width: 60%;
     height: fit-content;
     flex-direction: row;
-    justify-content: center;
     margin-left: 10%;
-    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid black 1px;
 }
 #search_categoria p{
     padding-top: 2%;
@@ -146,30 +151,56 @@ img{
     width: fit-content;
     height: fit-content;
 }
+
 #search_categoria img{
     width: 10%;
     height: 7%;
 }
 #tipo_categoria{
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
     width: 100%;
     height: 50%;
     margin-top: 5%;
 }
+.checkbox{
+    display: none;
+}
+.checks{
+    background-color: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+    border-radius: 10px;
+    height: fit-content;
+    transition: 0.3s;
+}
+.checks:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.labelforcat{
+    font-size: max(18px,1.5vw);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.7)
+
+}
 #Area_livros{
-    overflow-x: auto;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    align-content: space-between;
     width: 65%;
     height: fit-content;
+    margin-bottom: 1%;
 }
 #search_livro{
     display: flex;
-    background-color: rgba(0, 255, 0, 0.2);
     margin-top: 3%;
     width: 90%;
     height: 5%;
+    border-bottom: solid black 1px;
 }
 #img_lupa_livro{
     height: 100%;
@@ -191,12 +222,12 @@ img{
 .livro{
     width: 15%;
     height: 100%;
-    background-color: aqua;
+    background-color: rgba(147, 190, 183, 0.18);
+    box-shadow: inset;
 }
 .livro img{
     width: 100%;
     height: 75%;
-    object-fit: fill;
 }
 .estrelas{
     display: flex;
@@ -215,8 +246,16 @@ img{
     text-align: center;
 }
 #rodapé{
+    border-top: solid black 1px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
     height: 15%;
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.3);
 }
+#rodapé p{  
+    font-size:  max(15px,1.3vw);
+}
+
 
