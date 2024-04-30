@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <!--Reutilização-->
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/product.css">
+</head>
+<body>
+    <div class="Container">
+        <header id="Main_Header">
+            <div id="Logo">
+                <img id="imglogo" src="../Images/logo.png">
+                <p id="logo_name">EM-BOOKS</p>
+            </div>
+            <nav id="navigation">
+                <div id="navigation_help">
+                    <p><a href="#">Devoluções e pedidos</a></p>
+                    <p><a href="#">suporte</a></p>
+                </div>
+                <div id="navigation_options">
+                    <p><a href="#">Mais Vendidos</a></p>
+                    <p><a href="#">Lançamentos</a></p>
+                    <p onclick="true"><a href="#">Ofertas do dia</a></p>
+                </div>
+            </nav>
+            <div id="login">
+                <div id="divimglogin">
+                    <img src="../Images/user.png" alt="login">
+                </div>
+                <p>fazer login</p>
+            </div>
+            <div id="area_carrinho">
+                <img src="../Images/carrinho.png" alt="">
+                <p>Itens no carrinho: 0</p>
+            </div>
+        </header>
+        <main id="main_content">
+                <section id="categorias">
+                    <div id="search_categoria">
+                        <img src="../Images/lupa.png" alt="lupa" id="lupa">
+                        <label for="input_tag" id="label_tag">filtrar por Tags</label>
+                    </div>
+                    <div id="tipo_categoria">
+                        <div class="checks">
+                            <input type="checkbox" name="checkfan" id="checkfan" class="checkbox">
+                            <label for="checkfan" class="labelforcat">Fantasia</label>
+                        </div>
+                        <div class="checks">
+                            <input type="checkbox" name="checkart" id="checkart" class="checkbox">
+                            <label for="checkart" class="labelforcat">Arte</label>
+                        </div>  
+                        <div class="checks">
+                            <input type="checkbox" name="checkfic" id="checkfic" class="checkbox">
+                            <label for="checkfic" class="labelforcat">Ficção</label>
+                        </div>  
+                        <div class="checks">
+                            <input type="checkbox" name="checkaven" id="checkaven" class="checkbox">
+                            <label for="checkaven" class="labelforcat">Aventura</label>
+                        </div>
+                        <div class="checks">
+                            <input type="checkbox" name="checkfan" id="checkfan" class="checkbox">
+                            <label for="checkfan" class="labelforcat">romance</label>
+                        </div>      
+                        <div class="checks">
+                            <input type="checkbox" name="checkterror" id="checkterror" class="checkbox">
+                            <label for="checkterror" class="labelforcat">terror</label>
+                        </div>   
+                        <div class="checks">
+                            <input type="checkbox" name="checkmis" id="checkmis" class="checkbox">
+                            <label for="checkmis" class="labelforcat">Mistério</label>
+                        </div>   
+                        <div class="checks">
+                            <input type="checkbox" name="checkfatos" id="checkfatos" class="checkbox">
+                            <label for="checkfatos" class="labelforcat">Fatos Reais</label>
+                        </div>
+                        <div class="checks">
+                            <input type="checkbox" name="checkacao" id="checkacao" class="checkbox">
+                            <label for="checkacao" class="labelforcat">Ação</label>
+                        </div>
+                        <div class="checks">
+                            <input type="checkbox" name="checsuspense" id="checksuspense" class="checkbox">
+                            <label for="checksuspense" class="labelforcat">suspenso</label>
+                        </div>
+                               
+                    </div>
+                </section>
+                <section id="Area_livros">
+                    <!--Seções apenas de ilustração-->
+                    <div id="livro">
+                        <section id="conjunto_de_livro">
+                            <div class="livro" id="livro_produto">
+                                <img src="../Images/batalha_do_labirinto.png" alt="" srcset="">
+                                <div class="estrelas">
+                                    <img src="../Images/star.png" alt="" srcset="">
+                                    <img src="../Images/star.png" alt="" srcset="">
+                                    <img src="../Images/star.png" alt="" srcset="">
+                                    <img src="../Images/star.png" alt="" srcset="">
+                                    <img src="../Images/star.png" alt="" srcset="">
+                                </div>
+                                    <p id="preco">100R$</p>
+                                <p id="avaliações">avaliações: 0</p>
+                            </div>
+                            <div id="info_livro">
+                                <p id="titulo">Percy Jackson e os Olimpianos - a batalha do labirinto</p>
+                                <p id="autor">Rick Riordan</p>
+                                <p id="Paginas">400 Páginas</p>
+                                <p id="Sinopse"><strong>SINOPSE</strong> 
+                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                      Debitis labore sapiente nisi omnis nobis illo laborum facere aliquam? Quod provident
+                                      in labore aperiam est quisquam perferendis quas esse possimus repudiandae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi quo molestias minima, ea mollitia, at pariatur ape
+                                      riam corporis laudantium nihil dicta eveniet quibusdam vitae saepe aliqui
+                                      d dolore deleniti voluptates? Explicabo!</p>
+                            </div>
+                        </section>
+                        <p id="outros_livros">Outros livros do mesmo autor</p>
+                    </div>
+                    
+                </section>
+            </main>
+            <footer id="rodapé">
+                <p>&copy;2024.EM-BOOKS</p>
+            </footer>
+    </div>
+    
+</body>
+</html>
