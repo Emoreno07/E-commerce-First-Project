@@ -159,10 +159,9 @@ img{
 #tipo_categoria{
     display: flex;
     justify-content: center;
-    align-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    height: 50%;
+    height: fit-content;
     margin-top: 5%;
 }
 .checkbox{
@@ -176,6 +175,7 @@ img{
     border-radius: 10px;
     height: fit-content;
     transition: 0.3s;
+    margin-top: 8%;
 }
 .checks:hover{
     background-color: rgba(255, 255, 255, 0.2);
@@ -216,11 +216,14 @@ img{
     justify-content: space-around;
     margin-top: 5%;
     width: 90%;
-    height: 25%;
+    height: 20%;
     /*background-color: rgba(0, 183, 255, 0.2);*/
 }
 .livro{
-    width: 15%;
+    border : solid 0.5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: blue;
+    width: 20%;
     height: 100%;
     background-color: rgba(147, 190, 183, 0.18);
     box-shadow: inset;
@@ -228,7 +231,8 @@ img{
 }
 .livro img{
     width: 100%;
-    height: 100%;
+    height: 300px;
+    border-radius: 5px;
 }
 .estrelas{
     display: flex;
@@ -240,11 +244,19 @@ img{
     width: 20%;
     height: 100%;
 }
-.preco{
+.titulo{
+    width: 100%;
+    height: 40px;
+    font-size: max(15px,1vw);
+    text-align: center;
+    word-wrap: break-word;
+}
+.autor{
     width: 100%;
     height: fit-content;
-    font-size: 1vw;
+    font-size: max(15px,1vw);
     text-align: center;
+    margin-top: 5%;
 }
 #rodapé{
     border-top: solid black 1px;
@@ -263,37 +275,35 @@ img{
 /*estilos personalizados da página product*/
 
 #livro{
-    background-color: cyan;
     display: flex;
-    height: 1200px;
+    height: 1500px;
     flex-wrap: wrap;
     align-content: flex-start;
 
+}
+#img_livro_produto{
+    height: 75%;
 }
 #conjunto_de_livro{
     margin-top: 5%;
     display: flex;
     width: 100%;
     height: 55%;
-    background-color: gray;
     
 }
 #livro_produto{
-    width: 30%;
-    height: 75%;
+    width: 25%;
+    height: 70%;
 }
 #avaliações{
-    text-align: center;
-    margin-top: 5%;
     width: 100%;
-    background-color: yellow;
-    font-size: max(20px,1.5vw);
+    font-size: max(15px,1.3vw);
 }
 #preco{
+    margin-top: 4%;
     width: 100%;
-    background-color: lightcoral;
     text-align: center;
-    font-size: max(20px,1.5vw);
+    font-size: max(15px,1.3vw);
 }
 #info_livro{
     display: flex;
@@ -301,13 +311,11 @@ img{
     align-content: flex-start;
     width: 65%;
     height: 100%;
-    background-color: blue;
     margin-left: 5%;
     
 }
 #titulo{
     font-size: max(30px,1.5vw);
-    background-color: red;
     width: 100%;
     height: fit-content;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -340,15 +348,25 @@ img{
     padding: 0.5% 0.5% 0.5% 0.5%;
     border-radius: 10px;
 }
+#add_carrinho{
+
+    width: fit-content;
+    height: fit-content;
+    font-size: max(25px, 1.5vw);
+    font-weight: bold;
+    border : solid 2 px black;
+    background-color: inherit;
+    padding: 3px 3px 3px 3px;
+}
 #Sinopse{
     margin-top: 5%;
-    background-color: magenta;
     word-wrap: break-word;
     white-space: pre-line;
+    overflow: auto;
     word-spacing: 10px;
-    text-align: justify;
     width: 100%;
-    font-size: max(24px,1.2vw);
+    height: 55%;
+    font-size: max(18px,1vw);
     font-family: 'Times New Roman', Times, serif;
 }
 #outros_livros{
@@ -357,7 +375,23 @@ img{
     width: 100%;
     height: fit-content;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: beige;
 }
+#Area_outros_livros{
+    margin-top: 3%;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 32.5%;
+}
+#primeiro_livro_outros{
+    width: 20%;
+    height: 70%;
+}
+.outros_livros_imgs{
+    margin-left: 3%;
+    width: 20%;
+    height:70%;
+}
+
 
 
