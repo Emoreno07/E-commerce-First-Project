@@ -118,70 +118,43 @@ img{
     height: fit-content;
 }
 #main_content{
-    background-color: rgba(0, 0, 255, 0.3);
+    background-color: blue;
     display: flex;
     width: 100%;
-    height: auto;
-}
-#categorias{
-    align-content: flex-start;
-    display: flex;
-    height: 100%;
-    width: 35%;
-    justify-content: center;
+    height: fit-content;
     flex-wrap: wrap;
 }
-#search_categoria{
-    margin-top: 10%;
+#categorias{
+    background-color: yellow;
     display: flex;
-    width: 60%;
-    height: fit-content;
-    flex-direction: row;
-    margin-left: 10%;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid black 1px;
-}
-#search_categoria label{
-    padding-top: 2%;
-    text-align: justify;
-    color: black;
-    font-size:  max(12px,1vw);;
-    width: fit-content;
-    height: fit-content;
-}
-
-#search_categoria img{
-    width: 10%;
-    height: 7%;
+    height: 10%;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
 }
 #tipo_categoria{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: fit-content;
-    margin-top: 5%;
+    width: 9%;
+    height: 90%;
 }
 .checkbox{
     display: none;
 }
 .checks{
-    background-color: none;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-evenly;
-    width: 35%;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
-    height: fit-content;
-    transition: 0.3s;
-    margin-top: 8%;
 }
-.checks:hover{
-    background-color: rgba(255, 255, 255, 0.2);
+.checkimgs{
+    width: 30%;
+    height: 60%;
 }
+
 .labelforcat{
-    font-size: max(18px,1.5vw);
+    font-size: max(12px,1.3vw);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgba(255, 255, 255, 0.7)
 
@@ -191,11 +164,12 @@ img{
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    width: 65%;
+    width: 100%;
     height: fit-content;
     margin-bottom: 1%;
 }
 #search_livro{
+    background-color: red;
     display: flex;
     margin-top: 3%;
     width: 90%;
@@ -207,14 +181,41 @@ img{
     width: 5%;
 }
 #text_procurar_livro{
+    background-color: blue;
     font-size: max(18px,1.5vw);
     padding-top: 1%;
     word-spacing: 15px;
 }
+.banners{
+    margin-top: 5%;
+    width: 90%;
+    height: 400px;
+    background-color: cyan;
+}
+.banners img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.header-livros{
+    display: flex;
+    align-items: center;
+    margin-top: 5%;
+    width: 90%;
+    height: 100px;
+    background-color: red;
+}
+#text-header-livros{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    font-size: max(50px,2vw);
+}
 .conjunto_de_livros{
+    background-color: green;
     display: flex;
     justify-content: space-around;
-    margin-top: 5%;
+    margin-top: 1%;
     width: 90%;
     height: 20%;
     /*background-color: rgba(0, 183, 255, 0.2);*/
@@ -223,7 +224,7 @@ img{
     border : solid 0.5px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     background-color: blue;
-    width: 20%;
+    width: 15%;
     height: 100%;
     background-color: rgba(147, 190, 183, 0.18);
     box-shadow: inset;
@@ -231,14 +232,16 @@ img{
 }
 .livro img{
     width: 100%;
-    height: 300px;
+    height: 350px;
     border-radius: 5px;
 }
 .estrelas{
+    background-color: orange;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    height: 12%;
+    margin-left: 10%;
+    width:80%;
+    height: 20%;
 }
 .estrelas img{
     width: 20%;
@@ -256,22 +259,58 @@ img{
     height: fit-content;
     font-size: max(15px,1vw);
     text-align: center;
-    margin-top: 5%;
 }
 #rodapé{
     border-top: solid black 1px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    height: 15%;
-    background-color: rgba(0, 0, 255, 0.3);
+    height: 30%;
+    background-color: green;
+    
 }
-#rodapé p{  
-    font-size:  max(15px,1.3vw);
+#fale-conosco{
+    width: 30%;
+    height: 70%;
+    background-color: yellow;
 }
-
-
+#fale-conosco img{
+    width: 50px;
+    height: 50px;
+}
+#fale-conosco-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: max(30px,1.4vw);
+    width: 100%;
+    height: fit-content;
+}
+#seguranca{
+    width: 30%;
+    height: 70%;
+    background-color: red;
+}
+#seguranca-title{
+    text-align: center;
+    font-size: max(30px,1.4vw);
+    font-weight: bold;
+    width: 100%;
+    height: fit-content;
+}
+#direitos{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    background-color:orange;
+    align-items: center;
+}
+#direitos p{
+    font-size: max(25px,1.3vw);
+    width: 100%;
+    height: fit-content;
+}
 /*estilos personalizados da página product*/
 
 #livro{
