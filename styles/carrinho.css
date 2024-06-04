@@ -101,24 +101,25 @@ img{
     font-size:  max(18px,1.5vw);
     text-align: center;
 }
-#area_carrinho{
+#area_voltar{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 10%;
     height: 100%;
 }
-#area_carrinho img{
+#area_voltar img{
     width: 60%;
     height: 60%;
 }
-#area_carrinho p{
+#area_voltar p{
+    font-weight: bold;
     font-size:  max(15px,1.2vw);
     width: fit-content;
     height: fit-content;
 }
 #main_content{
-    background-color: rgba(0, 0, 255, 0.3);
+    background-color: #8bedfc;
     display: flex;
     justify-content: center;
     align-content: space-evenly;
@@ -153,18 +154,7 @@ img{
     font-weight: bold;
     align-content: flex-end;
 }
-#rodapé{
-    border-top: solid black 2px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 16%;
-    background-color: rgba(0, 0, 255, 0.3);
-}
-#rodapé p{  
-    font-size:  max(15px,1.3vw);
-}
+
 #carrinho{
     text-align: center;
     padding-top: 3%;
@@ -174,7 +164,7 @@ img{
     font-weight: bold;
 }
 #carrinho_preco{
-    background-color: rgba(0, 0, 255, 0.3);
+    background-color: #8bedfc;
     padding-top: 5%;
     display: flex;
     flex-direction: column;
@@ -196,10 +186,67 @@ img{
     width: 18%;
     height: 100%;
 }
-#button_section{
+#button-pagar{
+    width: 30%;
+    height: 5%;
+    border-radius: 10px;
+}
+#rodapé{
+    background-color: #8bedfc;
+    border-top: solid black 1px;
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
-    height: 85%;
+    height: 30%;
+    
+}
+#fale-conosco{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 70%;
+}
+#fale-conosco img{
+    width: 50px;
+    height: 50px;
+}
+#fale-conosco-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: max(30px,1.4vw);
+    width: 100%;
+    height: fit-content;
+}
+#fale-conosco-wpp, #fale-conosco-insta, #fale-conosco-face{
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: max(20px,1.2vw);
+
+    width: 80%;
+    height: fit-content;
+}
+#seguranca{
+    width: 30%;
+    height: 70%;
+}
+#seguranca-title{
+    text-align: center;
+    font-size: max(30px,1.4vw);
+    font-weight: bold;
+    width: 100%;
+    height: fit-content;
+}
+#direitos{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    align-items: center;
+}
+#direitos p{
+    font-size: max(25px,1.3vw);
+    width: 100%;
+    height: fit-content;
+    text-align: center;
 }

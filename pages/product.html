@@ -22,7 +22,7 @@
                 </div>
                 <div id="navigation_options">
                     <p><a href="#">Mais Vendidos</a></p>
-                    <p><a href="#">Lançamentos</a></p>
+                    <p><a href="#">Todos os livros</a></p>
                     <p onclick="true"><a href="sobre.html">Sobre nós</a></p>
                 </div>
             </nav>
@@ -38,62 +38,86 @@
             </div>
         </header>
         <main id="main_content">
-                <section id="categorias">
-                    <div id="search_categoria">
-                        <img src="../Images/lupa.png" alt="lupa" id="lupa">
-                        <label for="input_tag" id="label_tag">Procurar categoria</label>
+            <section id="categorias">
+                <div id="tipo_categoria">
+                    <div class="checks">
+                        <img src="../Images/fantasy-icon.png" alt="" class="checkimgs">
+                        <input type="checkbox" name="checkfan" id="checkfan" class="checkbox">
+                        <label for="checkfan" class="labelforcat">Fantasia</label>
                     </div>
-                    <div id="tipo_categoria">
-                        <div class="checks">
-                            <input type="checkbox" name="checkfan" id="checkfan" class="checkbox">
-                            <label for="checkfan" class="labelforcat">Fantasia</label>
-                        </div>
-                        <div class="checks">
-                            <input type="checkbox" name="checkart" id="checkart" class="checkbox">
-                            <label for="checkart" class="labelforcat">Arte</label>
-                        </div>  
-                        <div class="checks">
-                            <input type="checkbox" name="checkfic" id="checkfic" class="checkbox">
-                            <label for="checkfic" class="labelforcat">Ficção</label>
-                        </div>  
-                        <div class="checks">
-                            <input type="checkbox" name="checkaven" id="checkaven" class="checkbox">
-                            <label for="checkaven" class="labelforcat">Aventura</label>
-                        </div>
-                        <div class="checks">
-                            <input type="checkbox" name="checkfan" id="checkfan" class="checkbox">
-                            <label for="checkfan" class="labelforcat">romance</label>
-                        </div>      
-                        <div class="checks">
-                            <input type="checkbox" name="checkterror" id="checkterror" class="checkbox">
-                            <label for="checkterror" class="labelforcat">terror</label>
-                        </div>   
-                        <div class="checks">
-                            <input type="checkbox" name="checkmis" id="checkmis" class="checkbox">
-                            <label for="checkmis" class="labelforcat">Mistério</label>
-                        </div>   
-                        <div class="checks">
-                            <input type="checkbox" name="checkfatos" id="checkfatos" class="checkbox">
-                            <label for="checkfatos" class="labelforcat">Fatos Reais</label>
-                        </div>
-                        <div class="checks">
-                            <input type="checkbox" name="checkacao" id="checkacao" class="checkbox">
-                            <label for="checkacao" class="labelforcat">Ação</label>
-                        </div>
-                        <div class="checks">
-                            <input type="checkbox" name="checsuspense" id="checksuspense" class="checkbox">
-                            <label for="checksuspense" class="labelforcat">suspenso</label>
-                        </div>
-                               
+                </div>
+                <div id="tipo_categoria">
+                    <div class="checks">
+                        <img src="../Images/art-icon.png" alt="" class="checkimgs">
+                        <input type="checkbox" name="checkart" id="checkart" class="checkbox">
+                        <label for="checkart" class="labelforcat">Arte</label>
                     </div>
-                </section>
+                </div>
+                <div id="tipo_categoria">
+                    <div class="checks">
+                        <img src="../Images/fiction-icon.png" alt="" class="checkimgs">
+                        <input type="checkbox" name="checkfic" id="checkfic" class="checkbox">
+                        <label for="checkfic" class="labelforcat">Ficção</label>
+                    </div>
+                </div>
+                <div id="tipo_categoria">
+                    <div class="checks">
+                        <img src="../Images/adventure-icon.png" alt="" class="checkimgs">
+                        <input type="checkbox" name="checkaven" id="checkaven" class="checkbox">
+                        <label for="checkaven" class="labelforcat">Aventura</label>
+                    </div>
+                </div>
+                <div id="tipo_categoria">
+                    <div class="checks">
+                        <img src="../Images/romance-icon.png" alt="" class="checkimgs">
+                        <input type="checkbox" name="checkfan" id="checkfan" class="checkbox">
+                        <label for="checkfan" class="labelforcat">romance</label>
+                    </div> 
+                </div>
+                <div id="tipo_categoria">
+                    <div class="checks">
+                        <img src="../Images/horror-icon.png" alt="" class="checkimgs">
+                        <input type="checkbox" name="checkterror" id="checkterror" class="checkbox">
+                        <label for="checkterror" class="labelforcat">terror</label>
+                    </div>
+                </div>
+                <div id="tipo_categoria">
+                    <div class="checks">
+                        <img src="../Images/mistery-icon.png" alt="" class="checkimgs">
+                        <input type="checkbox" name="checkmis" id="checkmis" class="checkbox">
+                        <label for="checkmis" class="labelforcat">Mistério</label>
+                    </div>
+                </div>
+                <div id="tipo_categoria">
+                    <div class="checks">
+                        <img src="../Images/facts-icon.png" alt="" class="checkimgs">
+                        <input type="checkbox" name="checkfatos" id="checkfatos" class="checkbox">
+                        <label for="checkfatos" class="labelforcat">Fatos Reais</label>
+                    </div>
+                </div>
+                <div id="tipo_categoria">
+                    <div class="checks">
+                        <img src="../Images/action-icon.png" alt="" class="checkimgs">
+                        <input type="checkbox" name="checkacao" id="checkacao" class="checkbox">
+                        <label for="checkacao" class="labelforcat">Ação</label>
+                    </div>
+                </div>
+                <div id="tipo_categoria">
+                    <div class="checks">
+                        <img src="../Images/suspense-icon.png" alt="" class="checkimgs">
+                        <input type="checkbox" name="checksuspense" id="checksuspense" class="checkbox">
+                        <label for="checksuspense" class="labelforcat">suspense</label>
+                    </div>
+                </div>
+            </section>
+
                 <section id="Area_livros">
                     <!--Seções apenas de ilustração-->
                     <div id="livro">
                         <section id="conjunto_de_livro">
-                            <div class="livro" id="livro_produto">
+                            <div id="livro_produto">
                                 <img id="img_livro_produto" src="../Images/batalha_do_labirinto.png" alt="" srcset="">
-                                <div class="estrelas">
+                                <div id="estrelas">
                                     <img src="../Images/star.png" alt="" srcset="">
                                     <img src="../Images/star.png" alt="" srcset="">
                                     <img src="../Images/star.png" alt="" srcset="">
@@ -101,7 +125,7 @@
                                     <img src="../Images/star.png" alt="" srcset="">
                                 </div>
                                 <p id="avaliações">avaliações: 0</p>
-                                <p id="preco"><strong>R$ 100.00</strong></p>               
+                                <p id="preco"><strong>Preço: R$ 100.00</strong></p>               
                             </div>
                             <div id="info_livro">
                                 <p id="titulo">Percy Jackson e os Olimpianos - a batalha do labirinto</p>
@@ -114,19 +138,34 @@
                                       riam corporis laudantium nihil dicta eveniet quibusdam vitae saepe aliqui
                                       d dolore deleniti voluptates? Explicabo!</p>
                                 <button id="add_carrinho">Adicionar ao carrinho</button>
+                                
                             </div>
                         </section>
                         <p id="outros_livros">Outros livros do mesmo autor</p>
-                        <div id="Area_outros_livros">
+                        <section id="Area_outros_livros">
                             <img id="primeiro_livro_outros" src="../Images/percy jackson raio.jpg">
                             <img class="outros_livros_imgs" src="../Images/A-maldicao_do_tita.jpg">
-                        </div>
+                        </section>
                     </div>
-                    
+
                 </section>
             </main>
             <footer id="rodapé">
-                <p>&copy;2024.EM-BOOKS</p>
+                <div id="fale-conosco">
+                    <p id="fale-conosco-title">Fale Conosco</p>
+                    <img src="../Images/whatsapp.png" alt="" srcset="">
+                    <p id="fale-conosco-wpp">(19) 99999-9999</p>
+                    <img src="../Images/instagram.png" alt="">
+                    <p id="fale-conosco-insta">@EMBOOKS</p>
+                    <img src="../Images/facebook.png" alt="">
+                    <p id="fale-conosco-face">EMBOOKS</p>
+                </div>
+                <div id="seguranca">
+                    <p id="seguranca-title">Informações Importantes</p>
+                </div>
+                <div id="direitos">
+                   <p>Copyright&copy; 2024 | Todos os Direitos Reservados</p>
+                </div>
             </footer>
     </div>
     

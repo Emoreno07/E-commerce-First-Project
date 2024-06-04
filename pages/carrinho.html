@@ -20,7 +20,7 @@
                 </div>
                 <div id="navigation_options">
                     <p><a href="#">Mais Vendidos</a></p>
-                    <p><a href="#">Lançamentos</a></p>
+                    <p><a href="#">Todos os livros</a></p>
                     <p onclick="true"><a href="sobre.html">Sobre nós</a></p>
                 </div>
             </nav>
@@ -30,9 +30,9 @@
                 </div>
                 <p>fazer login</p>
             </div>
-            <div id="area_carrinho">
-                <img src="../Images/carrinho.png" alt="">
-                <p>Itens no carrinho: 0</p>
+            <div id="area_voltar">
+                <img src="../Images/arrow-left.png" alt="">
+                <p>Voltar</p>
             </div>
         </header>
         <section id="main_content">
@@ -40,7 +40,17 @@
             <div class="products_carrinho">
                 <img class="imgs_carrinho" src="../Images/A 5 passos de Voce.jpg" alt="" srcset="">
                 <p id="descricao_carrinho">Nome do livro</p>
-                <p id="preco_carrinho">preco: 200</p>
+                <p id="preco_carrinho">preco: 200R$</p>
+            </div>
+            <div class="products_carrinho">
+                <img class="imgs_carrinho" src="../Images/A 5 passos de Voce.jpg" alt="" srcset="">
+                <p id="descricao_carrinho">Nome do livro</p>
+                <p id="preco_carrinho">preco: 200R$</p>
+            </div>
+            <div class="products_carrinho">
+                <img class="imgs_carrinho" src="../Images/A 5 passos de Voce.jpg" alt="" srcset="">
+                <p id="descricao_carrinho">Nome do livro</p>
+                <p id="preco_carrinho">preco: 200R$</p>
             </div>
         </section>
         <section id="carrinho_preco">
@@ -53,13 +63,25 @@
             <p id="valor_total">
                 Valor Total:
             </p>
-            <section id="button_section">
-                <button type="button">PAGAR</button>
-            </section>
+            <button type="button" id="button-pagar">PAGAR</button>
         </section>
         
         <footer id="rodapé">
-            <p>&copy;2024.EM-BOOKS</p>
+            <div id="fale-conosco">
+                <p id="fale-conosco-title">Fale Conosco</p>
+                <img src="../Images/whatsapp.png" alt="" srcset="">
+                <p id="fale-conosco-wpp">(19) 99999-9999</p>
+                <img src="../Images/instagram.png" alt="">
+                <p id="fale-conosco-insta">@EMBOOKS</p>
+                <img src="../Images/facebook.png" alt="">
+                <p id="fale-conosco-face">EMBOOKS</p>
+            </div>
+            <div id="seguranca">
+                <p id="seguranca-title">Informações Importantes</p>
+            </div>
+            <div id="direitos">
+               <p>Copyright&copy; 2024 | Todos os Direitos Reservados</p>
+            </div>
         </footer>
     </div>  
 </body>
