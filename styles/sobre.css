@@ -33,6 +33,7 @@ img{
     background-color: white;
 }
 #Logo{
+    cursor: -webkit-grab;
     display: flex;
     width: 30%;
     height: 100%;
@@ -85,12 +86,14 @@ img{
     margin-left: 25%;
 }
 #login{
+    
     display: flex;
     flex-direction: column;
     width: 15%;
     height: 100%;
 }
 #login img{
+    cursor: -webkit-grab;
     background-color: rgba(192,192,192,0.5);
     width: 70%;
     height: 100%;
@@ -109,6 +112,7 @@ img{
     height: 100%;
 }
 #area_carrinho img{
+    cursor: -webkit-grab;
     width: 60%;
     height: 60%;
 }

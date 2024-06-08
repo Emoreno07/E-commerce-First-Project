@@ -33,10 +33,12 @@ img{
     background-color: white;
 }
 #Logo{
+    cursor: -webkit-grab;
     display: flex;
     width: 30%;
     height: 100%;
 }
+
 #logo_name{
     margin-top: 5%;
     font-size: max(35px,3vw);
@@ -91,6 +93,7 @@ img{
     height: 100%;
 }
 #login img{
+    cursor: -webkit-grab;
     background-color: rgba(192,192,192,0.5);
     width: 70%;
     height: 100%;
@@ -109,6 +112,7 @@ img{
     height: 100%;
 }
 #area_carrinho img{
+    cursor: -webkit-grab;
     width: 60%;
     height: 60%;
 }
@@ -118,7 +122,7 @@ img{
     height: fit-content;
 }
 #main_content{
-    background-color: #8bedfc;
+    background-color: #8bedfc5d;
     display: flex;
     width: 100%;
     height: fit-content;
@@ -147,16 +151,22 @@ img{
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
+    cursor: -webkit-grab;
 }
 .checkimgs{
     width: 30%;
     height: 60%;
+    transition: 1s;
+}
+.checkimgs:hover{
+    width: 35%;
+    height: 70%;
 }
 
 .labelforcat{
     font-size: max(12px,1.3vw);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgba(255, 255, 255, 0.7)
+    color: black
 
 }
 #Area_livros{
@@ -185,6 +195,7 @@ img{
     word-spacing: 15px;
 }
 .banners{
+    cursor: -webkit-grab;
     margin-top: 5%;
     width: 90%;
     height: 400px;
@@ -212,25 +223,28 @@ img{
     height: 10%;
 }
 .conjunto_de_livros{
-    background-color: rgba(255,255,255,0.5);
+    background-color: white;
     display: flex;
     justify-content: space-around;
     margin-top: 1%;
     width: 90%;
     height: 20%;
     border-radius: 5px;
+    box-shadow: 3px 3px #00000036;
     /*background-color: rgba(0, 183, 255, 0.2);*/
 }
 .livro{
+    cursor: -webkit-grab;
     border: none;
     border-radius: 5px;
-    width: 10%;
+    width: 12%;
     height: 100%;
     box-shadow: inset;
     transition: 0.2s;
 }
 .livro:hover{
-    border: solid 1px black;
+    border: solid 1px white;
+    box-shadow: 3px 3px #b5aeaeb9;
 }
 .livro img{
     width: 100%;
@@ -249,6 +263,7 @@ img{
     height: 100%;
 }
 .titulo{
+    margin-top: 1%;
     width: 100%;
     height: 40px;
     font-size: max(15px,1vw);
