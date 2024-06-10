@@ -119,7 +119,7 @@ img{
     height: fit-content;
 }
 #main_content{
-    background-color: #8bedfc;
+    background-color: #8bedfc5d;;
     display: flex;
     justify-content: center;
     align-content: space-evenly;
@@ -133,7 +133,9 @@ img{
     margin-top: 5%;
     width: 60%;
     min-height: 100px;
-    border: solid 2px black;
+    border-radius: 5px;
+    box-shadow: 3px 3px #00000036 ;
+    background-color: white;
     
 }
 .products_carrinho:nth-child(2){
@@ -144,7 +146,7 @@ img{
     width: 60%;
     height: 100%;
     word-wrap: break-word;
-    align-content: center;
+    align-content: flex-start;
     text-align: center;
 }
 #preco_carrinho{
@@ -164,7 +166,7 @@ img{
     font-weight: bold;
 }
 #carrinho_preco{
-    background-color: #8bedfc;
+    background-color: #8bedfc5d;;
     padding-top: 5%;
     display: flex;
     flex-direction: column;
