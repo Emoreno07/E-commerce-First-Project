@@ -37,6 +37,12 @@ img{
     width: 30%;
     height: 100%;
 }
+#imglogo{
+    cursor: -webkit-grab;
+}
+#voltar_arrow{
+    cursor: -webkit-grab;
+}
 #logo_name{
     margin-top: 5%;
     font-size: max(35px,3vw);
@@ -141,41 +147,46 @@ img{
 .products_carrinho:nth-child(2){
     margin-top: 10%;
 }
-#descricao_carrinho{
+.descricao_carrinho{
     font-size: max(20px,1.5vw);
+    font-weight: bold;
     width: 60%;
     height: 100%;
     word-wrap: break-word;
     align-content: flex-start;
     text-align: center;
 }
-#preco_carrinho{
+.preco_carrinho{
     font-size: max(20px,1.5vw);
     width: 20%;
     height: 100%;
     font-weight: bold;
     align-content: flex-end;
 }
-
+#nolivro{
+    font-size: max(20px,2vw);
+    font-weight: bold;
+}
 #carrinho{
     text-align: center;
     padding-top: 3%;
-    font-size: 2vw;
+    font-size: max(20px,2vw);
     width: 100%;
     height: fit-content;
     font-weight: bold;
 }
 #carrinho_preco{
     background-color: #8bedfc5d;;
+    border-left: solid 1px black;
     padding-top: 5%;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 39.9%;
     height: auto;
     row-gap: 20px;
 }
 #carrinho_preco p{
-    font-size: max(30px,2vw);
+    font-size: max(25px,1.5vw);
     font-weight: bold;
 }
 #button_section button{
@@ -188,10 +199,45 @@ img{
     width: 18%;
     height: 100%;
 }
+form{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 200px;
+
+}
 #button-pagar{
-    width: 30%;
-    height: 5%;
-    border-radius: 10px;
+    font-size: max(15px,1.2vw);
+    font-weight: bold;
+    width: 20%;
+    height: 15%;
+    border-radius: 50px;
+    background-color: rgb(116, 116, 255);
+    color: white;
+    border: none;
+    margin-top: 2%;
+}
+#text-pag{
+    font: max(15px,1vw);
+    width: 100%;
+}
+#formas-pagamento{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+
+}
+#list_pagamentos{
+    font-size: max(15px,1.2vw);
+    width: 40%;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2%;
+    height: fit-content;
 }
 #rodapé{
     background-color: #8bedfc;

@@ -9,8 +9,11 @@ document.getElementsByTagName('body')[0].onload = () =>{
     document.querySelector('#imglogo').addEventListener('click',()=>{
             location.href = '../pages/index.html'
         })
+    document.querySelector('#carrinho_img').addEventListener('click', ()=>{
+        location.href = '../pages/carrinho.html'
+    })
     //colocando as informações do livro
-    //Import estava dando problemas por tanto decidi optar por refazer(copiar e colar) codigo do CreateBook
+    //Import estava dando problemas portanto decidi optar por refazer(copiar e colar) codigo do CreateBook
     const selected_product = JSON.parse(localStorage.getItem('CurrentProduct'))
     const imgProduct = document.querySelector("#img_livro_produto")
     imgProduct.src = selected_product.livroimg
@@ -47,7 +50,7 @@ document.getElementsByTagName('body')[0].onload = () =>{
         if(localStorage.getItem('carrinho') === null)
             localStorage.setItem('carrinho',JSON.stringify(items))
         const carrinho = JSON.parse(localStorage.getItem('carrinho'))
-        carrinho.items.push(localStorage.getItem('CurrentProduct'))
+        carrinho.items.push(JSON.parse(localStorage.getItem('CurrentProduct')))
         localStorage.setItem('carrinho',JSON.stringify(carrinho))
         alert("O seu produto foi adicionado ao carrinho")
         location.reload()

@@ -200,6 +200,12 @@ const ImagesPodeSerDoSeuInteresse = {
         document.querySelector('#imglogo').addEventListener('click',()=>{
             location.href = '../pages/index.html'
         })
+
+        document.querySelector('#carrinho_img').addEventListener('click', ()=>{
+            location.href = '../pages/carrinho.html'
+        })
+
+        
         //colocando os produtos nas categorias de livros
         
         ImagesNovidades.images.forEach((element, index) =>{

@@ -31,13 +31,13 @@
                 <p><a href="../pages/Login.html">fazer login</a></p>
             </div>
             <div id="area_voltar">
-                <img src="../Images/arrow-left.png" alt="">
+                <img src="../Images/arrow-left.png" alt="" id="voltar_arrow">
                 <p id="voltar">Voltar</p>
             </div>
         </header>
         <section id="main_content">
             <p id="carrinho">Carrinho</p>
-            <div class="products_carrinho">
+            <!-- <div class="products_carrinho">
                 <img class="imgs_carrinho" src="../Images/A 5 passos de Voce.jpg" alt="" srcset="">
                 <p id="descricao_carrinho">Nome do livro + Autor</p>
                 <p id="preco_carrinho">preco: 100R$</p>
@@ -51,19 +51,28 @@
                 <img class="imgs_carrinho" src="../Images/A 5 passos de Voce.jpg" alt="" srcset="">
                 <p id="descricao_carrinho">Nome do livro</p>
                 <p id="preco_carrinho">preco: 100R$</p>
-            </div>
+            </div> -->
         </section>
         <section id="carrinho_preco">
-            <p id="valor">
-                Valor:
-            </p>
-            <p id="frete">
-                Frete:
-            </p>
+            <p id="valor">Valor:</p>
+            <p id="frete">Frete:</p>
             <p id="valor_total">
                 Valor Total:
             </p>
-            <button type="button" id="button-pagar">PAGAR</button>
+            <div id="formas-pagamento">
+                <p id="text-pag">formas de Pagamento: </p>
+                <form>
+                    <input list="pagamentos" id="list_pagamentos" required>
+                    <datalist id="pagamentos">
+                        <option value="PIX">
+                        <option value="Débito">
+                        <option value="Crédito">
+                        <option value="Boleto">
+                    </datalist>
+                    <input type="submit" id="button-pagar" value="Confirmar">            
+                </form>
+                
+            </div>
         </section>
         
         <footer id="rodapé">
@@ -85,4 +94,5 @@
         </footer>
     </div>  
 </body>
+<script src="../JS/carrinho.js"></script>
 </html>
