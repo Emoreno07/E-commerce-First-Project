@@ -20,7 +20,7 @@
                 </div>
                 <div id="navigation_options">
                     <p><a href="#">Mais Vendidos</a></p>
-                    <p><a href="#">Todos os livros</a></p>
+                    <p><a href="../pages/Todos.html">Todos os livros</a></p>
                     <p onclick="true"><a href="sobre.html">Sobre nós</a></p>
                 </div>
             </nav>
@@ -60,16 +60,39 @@
                 Valor Total:
             </p>
             <div id="formas-pagamento">
-                <p id="text-pag">formas de Pagamento: </p>
+                <p id="text-pag">Coloque suas informações</p>
                 <form>
-                    <input list="pagamentos" id="list_pagamentos" required>
-                    <datalist id="pagamentos">
-                        <option value="PIX">
-                        <option value="Débito">
-                        <option value="Crédito">
-                        <option value="Boleto">
-                    </datalist>
-                    <input type="submit" id="button-pagar" value="Confirmar">            
+                    <div class="inputarea">
+                        <label for="pagamentos">forma de pagamento</label>
+                        <input list="pagamentos" id="list_pagamentos" required>
+                        <datalist id="pagamentos">
+                            <option value="PIX">
+                            <option value="Débito">
+                            <option value="Crédito">
+                            <option value="Boleto">
+                        </datalist>
+                    </div>
+                   
+                    <div class="inputarea">
+                        <label for="nome">Nome </label> 
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="inputarea">
+                        <label for="endereco">Endereco </label>
+                        <input type="text" name="endereco" id="endereco" required>
+                        
+                    </div>
+                    <div class="inputarea">
+                        <label for="CEP">CEP </label>
+                        <input type="text" name="CEP" id="CEP" required>
+                        
+                    </div>
+                    <div class="inputarea">
+                        <label for="email">Email </label>
+                        <input type="email" name="email" id="email" required>
+                        
+                    </div>
+                    <input type="button" id="button-pagar" value="Confirmar">            
                 </form>
                 
             </div>

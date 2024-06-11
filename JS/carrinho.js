@@ -57,7 +57,11 @@ document.querySelector('body').onload = () =>{
     const total = parseInt(frete.innerHTML.replace('R$','').replace('Frete: ','')) + parseInt(valor.innerHTML.replace('R$','').replace('Valor: ',''))
     document.querySelector('#valor_total').innerHTML += `${total}R$`
     
-    document.querySelector('#button-pagar').addEventListener('click', ()=>{
-        
-    })
+    document.querySelector('#button-pagar').addEventListener('click', function(event){
+        event.stopImmediatePropagation()
+        event.preventDefault()
+        localStorage.removeItem('carrinho')
+        alert("O seu pedido foi feito")
+        location.reload()
+    }, true)
 }
