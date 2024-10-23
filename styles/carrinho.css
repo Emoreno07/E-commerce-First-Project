@@ -1,20 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: white;
-    width: 100%;
-    height: 100%;
+@import './global.css';
 
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-img{
-    object-fit: fill;
-}
+
 .Container{
     padding: 2% 2% 2% 2%;
     width: 95vw;
