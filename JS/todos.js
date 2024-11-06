@@ -1,7 +1,7 @@
 //banco dos livros
 //paro casos de teste, as avaliações, rating e paginas estão usando Math.Random e não são fixas
 //Import estava dando problemas, então decidi copiar o banco
-
+import makeHeader from "./components/header.js"
 
 function CreateBook(img, rating, name, author,qtaPaginas)
 {
@@ -66,6 +66,9 @@ function CreateBook(img, rating, name, author,qtaPaginas)
 
 
 document.querySelector('body').onload = () =>{
+    document.querySelector('.container')
+    .insertBefore(makeHeader(), document.querySelector('.container').firstChild)
+    
     document.querySelector('#login').addEventListener('click', ()=>{
         location.href = '../pages/Login.html'
     })

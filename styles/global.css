@@ -1,5 +1,5 @@
 /*estilos que estavam sendo duplicados em cada .css*/
-
+@import "/JS/components/header.css";
 *{
     padding: 0;
     margin: 0;
@@ -23,6 +23,14 @@ header{
     border-bottom: solid 2px #000;
     background-color: white;
 }
+.container{
+    padding: 2%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1300px;
+}
 .flex-container{
     display: flex;
 }
@@ -37,4 +45,7 @@ header{
 }
 .grow{
     flex: 1;
+}
+.current-page a{
+    color: blue;
 }

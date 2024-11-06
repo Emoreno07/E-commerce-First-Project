@@ -1,8 +1,10 @@
-
+import makeHeader from "./components/header.js"
 
 
 
 document.getElementsByTagName('body')[0].onload = () =>{
+    document.querySelector('.container')
+    .insertBefore(makeHeader(), document.querySelector('.container').firstChild)
     //quantidade de itens no carrinho
     document.querySelector('#p_carrinho').innerHTML = 'Itens no carrinho: ' +
     ((localStorage.getItem('carrinho') === null) ? 0 : JSON.parse(localStorage.getItem('carrinho')).items.length)

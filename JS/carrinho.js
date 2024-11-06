@@ -1,3 +1,5 @@
+import makeHeader from "./components/header.js"
+
 function makeItemCarrinho(img,titulo,valor)
 {
     const item_carrinho = document.createElement('div')
@@ -17,6 +19,8 @@ function makeItemCarrinho(img,titulo,valor)
     return item_carrinho
 }
 document.querySelector('body').onload = () =>{
+    document.querySelector('.container')
+    .insertBefore(makeHeader(), document.querySelector('.container').firstChild)
     document.querySelector('#imglogo').addEventListener('click',()=>{
         location.href = '../pages/index.html'
     })

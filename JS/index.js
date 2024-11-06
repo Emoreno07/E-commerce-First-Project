@@ -1,6 +1,6 @@
 //banco dos livros
 //paro casos de teste, as avaliações, rating e paginas estão usando Math.Random e não são fixas
-import makeHeader from "./header.js"
+import makeHeader from "./components/header.js"
 const ImagesNovidades = {
     images: [
     '../Images/A 5 passos de Voce.jpg',
