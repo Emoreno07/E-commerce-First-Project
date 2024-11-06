@@ -1,6 +1,8 @@
 //banco dos livros
 //paro casos de teste, as avaliações, rating e paginas estão usando Math.Random e não são fixas
-import makeHeader from "./components/header.js"
+import makeHeader from "./components/header.js";
+import Categorias from "./components/categorias.js";
+import { bancoDeLivros } from "./banco.js";
 const ImagesNovidades = {
     images: [
     '../Images/A 5 passos de Voce.jpg',
@@ -193,10 +195,10 @@ const ImagesPodeSerDoSeuInteresse = {
 
 
     document.getElementsByTagName('body')[0].onload = function(){
-        //itens no carringo(quantidade)
         document.querySelector('.container')
-        .insertBefore(makeHeader(), document.querySelector('.container').firstChild)
-        
+        .insertBefore(makeHeader(), document.querySelector('.container').firstChild);
+        document.querySelector('#main_content')
+        .insertBefore(Categorias(), document.querySelector('#main_content').firstChild);
         
         document.querySelector('#p_carrinho').innerHTML = 'Itens no carrinho: ' +
         ((localStorage.getItem('carrinho') === null) ? 0 : JSON.parse(localStorage.getItem('carrinho')).items.length)

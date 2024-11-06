@@ -1,5 +1,6 @@
-import makeHeader from "./components/header.js"
-
+import Categorias from "./components/categorias.js"
+import makeHeader from "./components/header.js";
+import { bancoDeLivros } from "./banco.js";
 function makeItemCarrinho(img,titulo,valor)
 {
     const item_carrinho = document.createElement('div')
@@ -20,11 +21,10 @@ function makeItemCarrinho(img,titulo,valor)
 }
 document.querySelector('body').onload = () =>{
     document.querySelector('.container')
-    .insertBefore(makeHeader(), document.querySelector('.container').firstChild)
-    document.querySelector('#imglogo').addEventListener('click',()=>{
-        location.href = '../pages/index.html'
-    })
-
+    .insertBefore(makeHeader(), document.querySelector('.container').firstChild);
+    document.querySelector('#main_content')
+    .insertBefore(Categorias(), document.querySelector('#main_content').firstChild);
+    
     document.querySelector('#voltar_arrow').addEventListener('click', ()=>{
         location.href = document.referrer
     })

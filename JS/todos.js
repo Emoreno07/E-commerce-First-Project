@@ -1,8 +1,9 @@
 //banco dos livros
 //paro casos de teste, as avaliações, rating e paginas estão usando Math.Random e não são fixas
 //Import estava dando problemas, então decidi copiar o banco
-import makeHeader from "./components/header.js"
-
+import makeHeader from "./components/header.js";
+import Categorias from "./components/categorias.js";
+import { bancoDeLivros } from "./banco.js";
 function CreateBook(img, rating, name, author,qtaPaginas)
 {
     const livro = document.createElement('div')
@@ -68,17 +69,13 @@ function CreateBook(img, rating, name, author,qtaPaginas)
 document.querySelector('body').onload = () =>{
     document.querySelector('.container')
     .insertBefore(makeHeader(), document.querySelector('.container').firstChild)
-    
+    document.querySelector('#main_content')
+    .insertBefore(Categorias(), document.querySelector('#main_content').firstChild);
     document.querySelector('#login').addEventListener('click', ()=>{
         location.href = '../pages/Login.html'
     })
     document.querySelector('#p_carrinho').innerHTML = 'Itens no carrinho: ' +
     ((localStorage.getItem('carrinho') === null) ? 0 : JSON.parse(localStorage.getItem('carrinho')).items.length)
-
-    document.querySelector('#imglogo').addEventListener('click',()=>{
-        location.href = '../pages/index.html'
-    })
-
     document.querySelector('#carrinho_img').addEventListener('click', ()=>{
         location.href = '../pages/carrinho.html'
     })

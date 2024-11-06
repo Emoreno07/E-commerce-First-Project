@@ -1,5 +1,6 @@
 /*estilos que estavam sendo duplicados em cada .css*/
 @import "/JS/components/header.css";
+@import "/JS/components/categorias.css";
 *{
     padding: 0;
     margin: 0;

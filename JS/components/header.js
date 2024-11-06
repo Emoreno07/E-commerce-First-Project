@@ -10,7 +10,7 @@ export default function makeHeader(){
                         <p id="voltar">Voltar</p>
                     </div>`
                     
-    const carrinho = `  <div id="area_carrinho">
+    const carrinho = `  <div id="area_carrinho" onclick="location.href= '/pages/carrinho.html'">
                             <img src="/Images/carrinho.png" alt="" id="carrinho_img">
                             <p id="p_carrinho">Itens no carrinho: </p>
                         </div>
@@ -19,7 +19,7 @@ export default function makeHeader(){
     //mais seguro que innerHTML
     return new DOMParser().parseFromString(`
         <header>
-            <div id="Logo">
+            <div id="Logo" onclick="window.location.href = '/index.html'">
                 <img id="imglogo" src="/Images/logo.png">
                 <p id="logo_name">EM-BOOKS</p>
             </div>
@@ -31,7 +31,7 @@ export default function makeHeader(){
                 <div id="navigation_options">
                     <p class='${currentPage === 'vendidos'? "current-page" : ''}'><a href="#">Mais Vendidos</a></p>
                     <p class='${currentPage === 'Todos'? "current-page" : ''}'><a href="/pages/Todos.html">Todos os livros</a></p>
-                    <p class='${currentPage === 'sobre'? "current-page" : ''}' onclick="true"><a href="sobre.html">Sobre nós</a></p>
+                    <p class='${currentPage === 'sobre'? "current-page" : ''}' onclick="true"><a href="/pages/sobre.html">Sobre nós</a></p>
                 </div>
             </nav>
             <div class="login" onclick='location.href'>
