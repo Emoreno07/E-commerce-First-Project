@@ -78,49 +78,6 @@
     box-shadow: 3px 3px #00000036;
     /*background-color: rgba(0, 183, 255, 0.2);*/
 }
-.livro{
-    cursor: -webkit-grab;
-    border: none;
-    border-radius: 5px;
-    width: 12%;
-    height: 100%;
-    box-shadow: inset;
-    transition: 0.2s;
-}
-.livro:hover{
-    border: solid 1px white;
-    box-shadow: 3px 3px #b5aeaeb9;
-}
-.livro img{
-    width: 100%;
-    height: 250px;
-    border-radius: 5px;
-}
-.estrelas{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 10%;
-    width:80%;
-    height: 20%;
-}
-.estrelas img{
-    width: 20%;
-    height: 100%;
-}
-.titulo{
-    margin-top: 1%;
-    width: 100%;
-    height: 40px;
-    font-size: max(15px,1vw);
-    text-align: center;
-    word-wrap: break-word;
-}
-.autor{
-    width: 100%;
-    height: fit-content;
-    font-size: max(15px,1vw);
-    text-align: center;
-}
 #rodapé{
     background-color: #8bedfc;
     border-top: solid black 1px;

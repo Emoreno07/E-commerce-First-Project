@@ -1,49 +1,24 @@
-import makeHeader from "./components/header.js"
-import Categorias from "./components/categorias.js";
-import { bancoDeLivros } from "./banco.js";
+import Categorias from "./components/categorias/categorias.js"
+import makeHeader from "./components/header/header.js";
+import MakeBook from "./components/livro/makelivro.js";
 
 document.getElementsByTagName('body')[0].onload = () =>{
     document.querySelector('.container')
     .insertBefore(makeHeader(), document.querySelector('.container').firstChild);
     document.querySelector('#main_content')
     .insertBefore(Categorias(), document.querySelector('#main_content').firstChild);
-    //quantidade de itens no carrinho
-    document.querySelector('#p_carrinho').innerHTML = 'Itens no carrinho: ' +
-    ((localStorage.getItem('carrinho') === null) ? 0 : JSON.parse(localStorage.getItem('carrinho')).items.length)
-    
-    document.querySelector('#carrinho_img').addEventListener('click', ()=>{
-        location.href = '../pages/carrinho.html'
-    })
-    //colocando as informações do livro
-    //Import estava dando problemas portanto decidi optar por refazer(copiar e colar) codigo do CreateBook
     const selected_product = JSON.parse(localStorage.getItem('CurrentProduct'))
-    const imgProduct = document.querySelector("#img_livro_produto")
-    imgProduct.src = selected_product.livroimg
-    const rating = selected_product.rating
-    const stars = document.querySelector('#estrelas')
-    const desc = document.querySelector('#titulo')
-    desc.innerHTML = selected_product.titulo
-    document.querySelector('#avaliações').innerHTML = 'Avaliações: ' + Math.round(Math.random()* 10)
-    document.querySelector("#autor").innerHTML = selected_product.autor
-    document.querySelector('#Paginas').innerHTML = selected_product.paginas + ' Páginas'
-    for(let i = 0; i < Math.trunc(rating); i++){
-        const star = document.createElement('img')
-        star.src = '../Images/estrela-cheia.png'
-        stars.appendChild(star)
-    }
-    if(Math.trunc(rating) < rating)
-        {
-            let star_middle = document.createElement('img')
-            star_middle.src = '../Images/estrela_metade.png'
-            stars.appendChild(star_middle)
-        }
-    for(let i = 0; i < Math.abs(Math.trunc(rating) - 4); i++)
-        {
-            let star_empty = document.createElement('img')
-            star_empty.src = '../Images/star.png'
-            stars.appendChild(star_empty)
-        }
-    var items = {
+    document.getElementById('Area_livros').
+    insertBefore(
+        MakeBook(
+            selected_product.livroimg,
+            selected_product.titulo,
+            selected_product.autor,
+            selected_product.rating,
+            selected_product.paginas,
+            selected_product.preco
+        ), document.getElementById('Area_livros').firstChild)
+    let items = {
         'items' : []
     }
     //adiciona no carrinho

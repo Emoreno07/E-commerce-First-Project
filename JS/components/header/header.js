@@ -1,8 +1,8 @@
 // como o header estava sendo repetido em cada decidi criar uma função pra isso
+import GetCurrentLocationPath from "../../../utils/Path.js";
 export default function makeHeader(){
-    const location = window.location.href;
-    // verifica qual o arquivo(ex. ...:5500/pages/page.html retornará 'page')
-    const currentPage = location.match(/(?<=\/)\w+(?=.html)/g)[0];
+    const currentPage = GetCurrentLocationPath();
+    const carrinhoItems = (localStorage.getItem('carrinho') === null) ? 0 : JSON.parse(localStorage.getItem('carrinho')).items.length
     console.log(currentPage)
 
     const voltar = ` <div id="area_voltar" onclick='location.href = document.referrer'>
@@ -12,7 +12,7 @@ export default function makeHeader(){
                     
     const carrinho = `  <div id="area_carrinho" onclick="location.href= '/pages/carrinho.html'">
                             <img src="/Images/carrinho.png" alt="" id="carrinho_img">
-                            <p id="p_carrinho">Itens no carrinho: </p>
+                            <p id="p_carrinho">Itens no carrinho: ${carrinhoItems}</p>
                         </div>
     `
     const lastSection = currentPage === 'carrinho' ? voltar : carrinho;

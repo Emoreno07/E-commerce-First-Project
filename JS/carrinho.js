@@ -1,6 +1,7 @@
-import Categorias from "./components/categorias.js"
-import makeHeader from "./components/header.js";
+import Categorias from "./components/categorias/categorias.js"
+import makeHeader from "./components/header/header.js";
 import { bancoDeLivros } from "./banco.js";
+import MakeBook from "./components/livro/makelivro.js";
 function makeItemCarrinho(img,titulo,valor)
 {
     const item_carrinho = document.createElement('div')
@@ -22,12 +23,7 @@ function makeItemCarrinho(img,titulo,valor)
 document.querySelector('body').onload = () =>{
     document.querySelector('.container')
     .insertBefore(makeHeader(), document.querySelector('.container').firstChild);
-    document.querySelector('#main_content')
-    .insertBefore(Categorias(), document.querySelector('#main_content').firstChild);
-    
-    document.querySelector('#voltar_arrow').addEventListener('click', ()=>{
-        location.href = document.referrer
-    })
+
     const carrinho = JSON.parse(localStorage.getItem('carrinho'))
     if(carrinho === null)
         {
@@ -42,10 +38,13 @@ document.querySelector('body').onload = () =>{
             {
                 const livro = (carrinho.items[i])
                 document.querySelector('#main_content').appendChild(
-                    makeItemCarrinho(
+                    MakeBook(
                         livro.livroimg,
                         livro.titulo,
-                        Math.round(Math.random() * 250)
+                        livro.autor,
+                        undefined,
+                        undefined,
+                        livro.preco
                     )
                 )
             }

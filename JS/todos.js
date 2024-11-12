@@ -1,8 +1,8 @@
 //banco dos livros
 //paro casos de teste, as avaliações, rating e paginas estão usando Math.Random e não são fixas
 //Import estava dando problemas, então decidi copiar o banco
-import makeHeader from "./components/header.js";
-import Categorias from "./components/categorias.js";
+import Categorias from "./components/categorias/categorias.js"
+import makeHeader from "./components/header/header.js";
 import { bancoDeLivros } from "./banco.js";
 function CreateBook(img, rating, name, author,qtaPaginas)
 {

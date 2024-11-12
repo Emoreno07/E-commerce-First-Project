@@ -26,7 +26,7 @@ export const bancoDeLivros = [
             Math.trunc(Math.random() * 450),
             Math.trunc(Math.random() * 450),
             Math.trunc(Math.random() * 450),
-        ]
+        ],
     },
     {
         images :[

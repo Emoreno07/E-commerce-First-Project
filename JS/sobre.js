@@ -1,5 +1,5 @@
-import makeHeader from "./components/header.js"
-import Categorias from "./components/categorias.js";
+import Categorias from "./components/categorias/categorias.js"
+import makeHeader from "./components/header/header.js";
 import { bancoDeLivros } from "./banco.js";
 document.querySelector('body').onload = () => {
     document.querySelector('.container')

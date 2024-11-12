@@ -1,6 +1,7 @@
 /*estilos que estavam sendo duplicados em cada .css*/
-@import "/JS/components/header.css";
-@import "/JS/components/categorias.css";
+@import "/JS/components/header/header.css";
+@import "/JS/components/categorias/categorias.css";
+@import "/JS/components/livro/makelivro.css";
 *{
     padding: 0;
     margin: 0;
@@ -23,6 +24,9 @@ header{
     height: 150px;
     border-bottom: solid 2px #000;
     background-color: white;
+}
+span{
+    display: none;
 }
 .container{
     padding: 2%;
