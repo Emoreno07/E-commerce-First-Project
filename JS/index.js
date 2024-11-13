@@ -2,6 +2,7 @@
 //paro casos de teste, as avaliações, rating e paginas estão usando Math.Random e não são fixas
 import Categorias from "./components/categorias/categorias.js"
 import makeHeader from "./components/header/header.js";
+import MakeFooter from "./components/footer/footer.js";
 import { bancoDeLivros } from "./banco.js";
 import MakeBook from "./components/livro/makelivro.js";
 import addClickOnLivro from "../utils/click.js";
@@ -17,8 +18,8 @@ const imagesPodeSerDoSeuInteresse = bancoDeLivros[3];
 document.getElementsByTagName('body')[0].onload = function(){
     document.querySelector('.container')
     .insertBefore(makeHeader(), document.querySelector('.container').firstChild);
-    document.querySelector('#main_content')
-    .insertBefore(Categorias(), document.querySelector('#main_content').firstChild);
+    document.querySelector('main')
+    .insertBefore(Categorias(), document.querySelector('main').firstChild);
         
     //colocando os produtos nas categorias de livros
     
@@ -73,4 +74,6 @@ document.getElementsByTagName('body')[0].onload = function(){
 
     const livros = document.querySelectorAll('.livro')
     addClickOnLivro(livros)
+    document.querySelector('main')
+    .appendChild(MakeFooter())
 }

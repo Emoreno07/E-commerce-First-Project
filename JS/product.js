@@ -5,8 +5,8 @@ import MakeBook from "./components/livro/makelivro.js";
 document.getElementsByTagName('body')[0].onload = () =>{
     document.querySelector('.container')
     .insertBefore(makeHeader(), document.querySelector('.container').firstChild);
-    document.querySelector('#main_content')
-    .insertBefore(Categorias(), document.querySelector('#main_content').firstChild);
+    document.querySelector('main')
+    .insertBefore(Categorias(), document.querySelector('main').firstChild);
     const selected_product = JSON.parse(localStorage.getItem('CurrentProduct'))
     document.getElementById('Area_livros').
     insertBefore(

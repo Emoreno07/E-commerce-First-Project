@@ -3,41 +3,38 @@ import GetCurrentLocationPath from "../../../utils/Path.js";
 export default function makeHeader(){
     const currentPage = GetCurrentLocationPath();
     const carrinhoItems = (localStorage.getItem('carrinho') === null) ? 0 : JSON.parse(localStorage.getItem('carrinho')).items.length
-    console.log(currentPage)
 
-    const voltar = ` <div id="area_voltar" onclick='location.href = document.referrer'>
-                        <img src="../Images/arrow-left.png" alt="" id="voltar_arrow">
-                        <p id="voltar">Voltar</p>
+    const voltar = ` <div class="flex-container flex-center flex-column area-voltar" onclick='location.href = document.referrer'>
+                        <img src="../Images/arrow-left.png" alt="">
+                        <p>Voltar</p>
                     </div>`
                     
-    const carrinho = `  <div id="area_carrinho" onclick="location.href= '/pages/carrinho.html'">
+    const carrinho = `  <div class="flex-container flex-center flex-column area-carrinho" onclick="location.href= '/pages/carrinho.html'">
                             <img src="/Images/carrinho.png" alt="" id="carrinho_img">
-                            <p id="p_carrinho">Itens no carrinho: ${carrinhoItems}</p>
+                            <p>Itens no carrinho: ${carrinhoItems}</p>
                         </div>
     `
     const lastSection = currentPage === 'carrinho' ? voltar : carrinho;
     //mais seguro que innerHTML
     return new DOMParser().parseFromString(`
-        <header>
-            <div id="Logo" onclick="window.location.href = '/index.html'">
-                <img id="imglogo" src="/Images/logo.png">
-                <p id="logo_name">EM-BOOKS</p>
+        <header class="flex-container">
+            <div class="flex-container flex-center grow Logo" onclick="window.location.href = '/index.html'">
+                <img class="flex-container" src="/Images/logo.png">
+                <h1>EM-BOOKS</h1>
             </div>
-            <nav id="navigation">
-                <div id="navigation_help">
+            <nav class="flex-container flex-column flex-center">
+                <div class=" flex-container flex-center grow navigation_options">
                     <p class='${currentPage === 'devolução'? "current-page" : ''}'><a href="#">Devoluções e pedidos</a></p>
                     <p class='${currentPage === 'suporte'? "current-page" : ''}'><a href="#">suporte</a></p>
                 </div>
-                <div id="navigation_options">
+                <div class="flex-container flex-center grow navigation_options">
                     <p class='${currentPage === 'vendidos'? "current-page" : ''}'><a href="#">Mais Vendidos</a></p>
                     <p class='${currentPage === 'Todos'? "current-page" : ''}'><a href="/pages/Todos.html">Todos os livros</a></p>
                     <p class='${currentPage === 'sobre'? "current-page" : ''}' onclick="true"><a href="/pages/sobre.html">Sobre nós</a></p>
                 </div>
             </nav>
-            <div class="login" onclick='location.href'>
-                <div id="divimglogin">
-                    <img src="/Images/user.png" alt="login">
-                </div>
+            <div class="flex-container flex-center flex-column login" onclick='location.href'>
+                <img src="/Images/user.png" alt="login">
                 <p><a href="/pages/Login.html">fazer login</a></p>
             </div>
             ${lastSection}

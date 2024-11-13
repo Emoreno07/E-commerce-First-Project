@@ -11,8 +11,8 @@ const todosOsLivros = bancoDeLivros;
 document.querySelector('body').onload = () =>{
     document.querySelector('.container')
     .insertBefore(makeHeader(), document.querySelector('.container').firstChild)
-    document.querySelector('#main_content')
-    .insertBefore(Categorias(), document.querySelector('#main_content').firstChild);
+    document.querySelector('main')
+    .insertBefore(Categorias(), document.querySelector('main').firstChild);
     
     for(let i = 0; i < todosOsLivros.length; i++)
         {
