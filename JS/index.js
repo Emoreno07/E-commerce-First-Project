@@ -74,6 +74,6 @@ document.getElementsByTagName('body')[0].onload = function(){
 
     const livros = document.querySelectorAll('.livro')
     addClickOnLivro(livros)
-    document.querySelector('main')
+    document.querySelector('body')
     .appendChild(MakeFooter())
 }

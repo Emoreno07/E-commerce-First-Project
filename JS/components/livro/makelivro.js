@@ -2,11 +2,11 @@ import GetCurrentLocationPath from "../../../utils/Path.js";
 import CreateStars from "../../../utils/stars.js";
 export default function MakeBook(imgSource, title, author,rating = 0, qtaPaginas = 0, prize = 0){
     const path = GetCurrentLocationPath();
-    const livroComum = `<div class="livro" id="${qtaPaginas}">
+    const livroComum = `<div class=" flex-container flex-center flex-column livro" id="${qtaPaginas}">
                             <span class="rating">${rating}</span>
                             <span class="paginas">${qtaPaginas}</span>
                             <img src="${imgSource}" class="imglivro"   alt="" srcset="">
-                            <div class="estrelas">
+                            <div class="flex-container flex-center estrelas">
                                 ${CreateStars(rating)}
                             </div>
                             <p class="titulo">${title}</p>
@@ -19,25 +19,27 @@ export default function MakeBook(imgSource, title, author,rating = 0, qtaPaginas
                                 <p class="preco_carrinho">preco: ${prize}R$</p>
                             </div>`;
 
-    const livroUnico = `<div id="livro">
-                        <section id="conjunto_de_livro">
-                            <div id="livro_produto">
-                                <img id="img_livro_produto" src="${imgSource}" alt="" srcset="">
-                                <div id="estrelas">
-                                    ${CreateStars(rating)}
+    const livroUnico = `<section class="flex-container flex-center area-livro-unico">
+                            <div class="flex-container flex-center flex-column livro" id="livro-unico">
+                                <img id="img-livro-produto" src="${imgSource}" srcset="">
+                                
+                                <div class="flex-container flex-center estrelas ">
+                                ${CreateStars(rating)}
                                 </div>
                                 <p id="avaliações">avaliações: 0</p>
-                                <p id="preco"><strong>Preço: ${prize}R$</strong></p>               
+                                <p id="preco"><strong>Preço: ${prize}</strong></p>               
                             </div>
-                            <div id="info_livro">
-                                <p id="titulo">${title}</p>
-                                <p id="autor">${author}</p>
-                                <p id="Paginas">${qtaPaginas} Páginas</p>
+                            <div class="flex-container info-livro">
+                                <h2>${title}</h2>
+                                <p class="info-livro-special-p">${author}</p>
+                                <p class="info-livro-special-p">${qtaPaginas} Páginas</p>
                                 <p id="Sinopse"><strong>SINOPSE</strong> 
-                                     uhuuuuuu</p>                                
+                                    UMa Sinopse Aqui</p>    
+                                <button id="add-carrinho">Adicionar ao Carrinho</button>                            
                             </div>
-                        <button id="add_carrinho">Adicionar ao carrinho</button>
-                        </section>`
+                            
+                        </section> 
+                        `
     const whichBook = () =>{
         if(path === 'carrinho'){
             return livroCarrinho

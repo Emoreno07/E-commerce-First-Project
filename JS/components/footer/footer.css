@@ -1,55 +1,27 @@
 footer{
     background-color: #8bedfc;
     border-top: solid black 1px;
-    min-height: 200px;
+    min-height: 150px;
     flex-wrap: wrap;
     align-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
 }
 .fale-conosco{
-    display: flex;
     flex-wrap: wrap;
-    width: 30%;
-    height: 70%;
+}
+.titulo-fale-conosco{
+    width: 100%;
+    text-align: center;
 }
 .fale-conosco img{
     width: 50px;
     height: 50px;
 }
-#fale-conosco-title{
-    text-align: center;
-    font-weight: bold;
-    font-size: max(30px,1.4vw);
-    width: 100%;
-    height: fit-content;
-}
-#fale-conosco-wpp, #fale-conosco-insta, #fale-conosco-face{
-    margin-top: 2%;
-    margin-left: 2%;
-    font-size: max(20px,1.2vw);
 
-    width: 80%;
-    height: fit-content;
+.redes{
+    width: 90%;
 }
-.segurança{
-
-}
-#seguranca-title{
-    text-align: center;
-    font-size: max(30px,1.4vw);
-    font-weight: bold;
+.direitos{
     width: 100%;
-    height: fit-content;
-}
-#direitos{
-    background-color: yellow;
-
-    width: 100%;
-    height: 30%;
-    align-items: center;
-}
-#direitos p{
-    font-size: max(25px,1.3vw);
-    width: 100%;
-    height: fit-content;
-    text-align: center;
 }

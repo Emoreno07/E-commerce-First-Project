@@ -3,7 +3,6 @@ export default function addClickOnLivro(livros){
         element.addEventListener('click', function(){
             var json = {
                 'livroimg' : '',
-                'estrelasimgs' : [],
                 'titulo' : '',
                 "autor" : '',
                 'rating' : 0,
@@ -16,12 +15,6 @@ export default function addClickOnLivro(livros){
                 if(children.className === 'imglivro')
                     {
                         json.livroimg = children.src
-                    }
-                else if(children.className === 'estrelas')
-                    {
-                        for (const estrela of children.children) {
-                            json.estrelasimgs.push(estrela.src)
-                        }
                     }
                 else if(children.className === 'titulo')
                     {

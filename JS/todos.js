@@ -6,6 +6,7 @@ import makeHeader from "./components/header/header.js";
 import { bancoDeLivros } from "./banco.js";
 import addClickOnLivro from "../utils/click.js";
 import MakeBook from "./components/livro/makelivro.js";
+import MakeFooter from "./components/footer/footer.js";
 const todosOsLivros = bancoDeLivros;
 
 document.querySelector('body').onload = () =>{
@@ -31,5 +32,7 @@ document.querySelector('body').onload = () =>{
         }
         const livros = document.querySelectorAll('.livro')
         addClickOnLivro(livros)
+        document.querySelector('body')
+        .appendChild(MakeFooter())
 }
 

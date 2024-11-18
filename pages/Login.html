@@ -10,20 +10,22 @@
 <body>
     <div class="container">
         <!--para ver o conteudo do header, veja header.js-->
-        <main class="area-login">
-            <p id="textlogin">Fazer login na sua conta</p>
-            <label for="user" id="L-user">Usuário</label>
-            <input type="text" name="user" id="user">
-            <label for="pass">Senha</label>
-            <input type="password" name="pass" id="pass">
-            <p id="forgot-password">
-                <a href="#" >Esqueci minha senha.</a>
-            </p>
-            <p id="no-account-text">
-                Não possui conta?
-                <a href="Cadastro.html">Cadastre-se</a>
-            </p>
-            <button id="entrar">Entrar</button>
+        <main class="flex-container flex-center">
+                <section class="flex-container flex-center flex-column area-login">
+                    <h2>Fazer login na sua conta</h2>
+                    <label for="user" id="L-user">Usuário</label>
+                    <input type="text" name="user" id="user">
+                    <label for="pass">Senha</label>
+                    <input type="password" name="pass" id="pass">
+                    <p>
+                        <a href="#" >Esqueci minha senha.</a>
+                    </p>
+                    <p id="no-account-text">
+                        Não possui conta?
+                        <a href="Cadastro.html">Cadastre-se</a>
+                    </p>
+                    <button class="entrar" id="entrar">Entrar</button>
+            </section>
         </main>
         
     </div>

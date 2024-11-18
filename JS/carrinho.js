@@ -2,6 +2,7 @@ import Categorias from "./components/categorias/categorias.js"
 import makeHeader from "./components/header/header.js";
 import { bancoDeLivros } from "./banco.js";
 import MakeBook from "./components/livro/makelivro.js";
+import MakeFooter from "./components/footer/footer.js";
 function makeItemCarrinho(img,titulo,valor)
 {
     const item_carrinho = document.createElement('div')
@@ -67,4 +68,6 @@ document.querySelector('body').onload = () =>{
         alert("O seu pedido foi feito")
         location.reload()
     }, true)
+    document.querySelector('body')
+    .appendChild(MakeFooter())
 }

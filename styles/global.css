@@ -47,12 +47,7 @@ a{
 img{
     object-fit: fill;
 }
-header{
-    width: 100%;
-    height: 150px;
-    border-bottom: solid 2px #000;
-    background-color: #FFF;
-}
+
 span{
     display: none;
 }
@@ -66,10 +61,27 @@ h1{
     font-family: 'Poppins-Regular';
     font-size: var(--font-title);
 }
-
+h2{
+    font-size: var(--font-subtitle);
+    font-family: "Poppins-Regular";
+}
 p{
     font-size: var(--font-text);
     font-family: "QuickSand-Regular";
+}
+label{
+    font-size: var(--font-text);
+    font-family: "QuickSand-Bold";
+}
+button{
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    font-size: var(--font-text);
+    font-weight: bold;
+    border-radius: 10px;
+    border : solid 2 px black;
+    background-color: gray
 }
 .flex-container{
     display: flex;

@@ -1,4 +1,6 @@
+import CreateStars from "../utils/stars.js";
 import Categorias from "./components/categorias/categorias.js"
+import MakeFooter from "./components/footer/footer.js";
 import makeHeader from "./components/header/header.js";
 import MakeBook from "./components/livro/makelivro.js";
 
@@ -8,22 +10,22 @@ document.getElementsByTagName('body')[0].onload = () =>{
     document.querySelector('main')
     .insertBefore(Categorias(), document.querySelector('main').firstChild);
     const selected_product = JSON.parse(localStorage.getItem('CurrentProduct'))
-    document.getElementById('Area_livros').
-    insertBefore(
+    document.querySelector('main').insertBefore(
         MakeBook(
             selected_product.livroimg,
             selected_product.titulo,
             selected_product.autor,
             selected_product.rating,
             selected_product.paginas,
-            selected_product.preco
-        ), document.getElementById('Area_livros').firstChild)
+            Math.trunc(Math.random() * 100)
+        )
+    ,document.querySelector('.area-outros-livros'))
     let items = {
         'items' : []
     }
     //adiciona no carrinho
 
-    document.querySelector('#add_carrinho').onclick = () =>{
+    document.querySelector('#add-carrinho').onclick = () =>{
         if(localStorage.getItem('carrinho') === null)
             localStorage.setItem('carrinho',JSON.stringify(items))
         const carrinho = JSON.parse(localStorage.getItem('carrinho'))
@@ -32,4 +34,6 @@ document.getElementsByTagName('body')[0].onload = () =>{
         alert("O seu produto foi adicionado ao carrinho")
         location.reload()
     }
+    document.querySelector('body')
+    .appendChild(MakeFooter())
 }
