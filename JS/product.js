@@ -5,8 +5,8 @@ import makeHeader from "./components/header/header.js";
 import MakeBook from "./components/livro/makelivro.js";
 
 document.getElementsByTagName('body')[0].onload = () =>{
-    document.querySelector('.container')
-    .insertBefore(makeHeader(), document.querySelector('.container').firstChild);
+    document.querySelector('body')
+    .insertBefore(makeHeader(), document.querySelector('body').firstChild);
     document.querySelector('main')
     .insertBefore(Categorias(), document.querySelector('main').firstChild);
     const selected_product = JSON.parse(localStorage.getItem('CurrentProduct'))

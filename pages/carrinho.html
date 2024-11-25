@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="../styles/global.css">
 </head>
 <body>
-    <div class="container">
-        <!--para ver o conteudo do header, veja header.js-->
-        <section id="main_content">
-            <p id="carrinho">Carrinho</p>
+    <main class="flex-container">
+        <section class="flex-container flex-column grow itens-carrinho">
+            <h1>Carrinho</h1>
             <!-- 
             <div class="products_carrinho">
                 <img class="imgs_carrinho" src="../Images/A 5 passos de Voce.jpg" alt="" srcset="">
@@ -29,16 +28,13 @@
                 <p id="preco_carrinho">preco: 100R$</p>
             </div> -->
         </section>
-        <section id="carrinho_preco">
-            <p id="valor">Valor:</p>
-            <p id="frete">Frete:</p>
-            <p id="valor_total">
-                Valor Total:
-            </p>
-            <div id="formas-pagamento">
-                <p id="text-pag">Coloque suas informações</p>
-                <form>
-                    <div class="inputarea">
+        <section class="flex-container flex-column grow carrinho-preço">
+            <p id="valor"><strong>Valor:</strong></p>
+            <p id="frete"><strong>Frete:</strong></p>
+            <p id="valor_total"><strong>Valor Total:</strong></p>
+            <form class="flex-container flex-center flex-column">
+                <h2>Coloque suas informações</h2>
+                    <div class="flex-container flex-center input-area">
                         <label for="pagamentos">forma de pagamento</label>
                         <input list="pagamentos" id="list_pagamentos" required>
                         <datalist id="pagamentos">
@@ -49,31 +45,32 @@
                         </datalist>
                     </div>
                    
-                    <div class="inputarea">
+                    <div class="flex-container flex-center input-area">
                         <label for="nome">Nome </label> 
                         <input type="text" name="nome" id="nome" required>
                     </div>
-                    <div class="inputarea">
+                    <div class="flex-container flex-center input-area">
                         <label for="endereco">Endereco </label>
                         <input type="text" name="endereco" id="endereco" required>
                         
                     </div>
-                    <div class="inputarea">
+                    <div class="flex-container flex-center input-area">
                         <label for="CEP">CEP </label>
                         <input type="text" name="CEP" id="CEP" required>
                         
                     </div>
-                    <div class="inputarea">
+                    <div class="flex-container flex-center input-area">
                         <label for="email">Email </label>
                         <input type="email" name="email" id="email" required>
                         
                     </div>
-                    <input type="button" id="button-pagar" value="Confirmar">            
-                </form>
+                    <button type="submit" id="button-pagar">Confirmar</button>         
                 
-            </div>
-        </section>
-    </div>  
+            </form>
+        </section> 
+    </main>
+        <!--para ver o conteudo do header, veja header.js-->
+        
 </body>
 <script type="module" src="../JS/carrinho.js"></script>
 </html>

@@ -1,18 +1,20 @@
-.products_carrinho{
-    display: flex;
-    margin-top: 5%;
-    width: 60%;
+.itens-carrinho{
+    align-items: center;
+    gap: 2rem;
+}
+.itens-carrinho img{
+    width: 100px;
+    height: auto;
+}
+.product-carrinho{
+    width: 70%;
     min-height: 100px;
     border-radius: 5px;
     box-shadow: 3px 3px #00000036 ;
     background-color: white;
     
 }
-.products_carrinho:nth-child(2){
-    margin-top: 10%;
-}
 .descricao_carrinho{
-    font-size: max(20px,1.5vw);
     font-weight: bold;
     width: 60%;
     height: 100%;
@@ -20,95 +22,35 @@
     align-content: flex-start;
     text-align: center;
 }
-.preco_carrinho{
-    font-size: max(20px,1.5vw);
+.preço-item-carrinho{
     width: 20%;
     height: 100%;
     font-weight: bold;
     align-content: flex-end;
 }
-#nolivro{
-    font-size: max(20px,2vw);
-    font-weight: bold;
-}
-#carrinho{
-    text-align: center;
-    padding-top: 3%;
-    font-size: max(20px,2vw);
-    width: 100%;
-    height: fit-content;
-    font-weight: bold;
-}
-#carrinho_preco{
-    background-color: #8bedfc5d;;
-    border-left: solid 1px black;
+.carrinho-preço{
     padding-top: 5%;
-    display: flex;
-    flex-direction: column;
-    width: 39.9%;
-    height: auto;
-    row-gap: 20px;
-}
-#carrinho_preco p{
-    font-size: max(25px,1.5vw);
-    font-weight: bold;
-}
-#button_section button{
-    width: 40%;
-    height: 60px;
-    border-radius: 5px;
-    
-}
-.imgs_carrinho{
-    width: 18%;
-    height: 100%;
+    border-left: dotted 2px #000;
+    gap: 2rem;
+    align-items: center;
 }
 form{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 90%;
-}
-#button-pagar{
-    font-size: max(15px,1.2vw);
-    font-weight: bold;
-    width: 30%;
-    height: 15%;
-    border-radius: 50px;
-    background-color: rgb(116, 116, 255);
-    color: white;
-    border: none;
-    margin-top: 2%;
-}
-#text-pag{
-    font: max(15px,1vw);
+    margin-top: 5%;
     width: 100%;
 }
-#formas-pagamento{
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    height: 50%;
-    text-align: center;
-
+form button{
+    margin-top: 5%;
 }
-.inputarea{
-    display: flex;
-    justify-content: center;
+.input-area{
     width: 100%;
-    height: fit-content;
 }
-.inputarea label{
-    font-size: max(25px 1.8vw);
+.input-area label{
     font-weight: bold;
     width: 20%;
     text-align: end;
     padding-top: 2%;
 }
-#list_pagamentos, #nome, #email, #CEP, #endereco{
+.input-area input{
     margin-left: 2%;
     font-size: max(15px,1.2vw);
     width: 40%;

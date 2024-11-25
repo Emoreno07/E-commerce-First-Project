@@ -3,12 +3,19 @@ export default function MakeFooter(){
         <footer class="flex-container">
             <div class="flex-container flex-center grow fale-conosco">
                 <h2 class="titulo-fale-conosco">Fale Conosco</h2>
-                <img src="../Images/whatsapp.png" alt="" srcset="">
-                <p class="redes">(19) 99999-9999</p>
-                <img src="../Images/instagram.png" alt="">
-                <p class="redes">@EMBOOKS</p>
-                <img src="../Images/facebook.png" alt="">
-                <p class="redes">EMBOOKS</p>
+                <div class="flex-container group-title-with-media-img">
+                    <img src="../Images/whatsapp.png" alt="" srcset="">  
+                    <p class="redes">(19) 99999-9999</p>              
+                </div>
+                <div class="flex-container group-title-with-media-img">
+                    <img src="../Images/instagram.png" alt="">  
+                    <p class="redes">@EMBOOKS</p>   
+                </div>
+                <div class="flex-container group-title-with-media-img">
+                    <img src="../Images/facebook.png" alt="">
+                    <p class="redes">EMBOOKS</p>
+                </div>
+                
             </div>
             <div class=" flex-container flex-center grow segurança">
                 <h2>Informações Importantes</h2>

@@ -5,9 +5,7 @@
     width: 200px;
     height: 80%;
     box-shadow: inset;
-    transition: 0.2s;
-}
-.livro:hover{
+    background-color: white;
     border: solid 1px white;
     box-shadow: 3px 3px #b5aeaeb9;
 }

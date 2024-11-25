@@ -16,8 +16,8 @@ const imagesPodeSerDoSeuInteresse = bancoDeLivros[3];
 //funcção para criar e colocar um livro na categoria.
 
 document.getElementsByTagName('body')[0].onload = function(){
-    document.querySelector('.container')
-    .insertBefore(makeHeader(), document.querySelector('.container').firstChild);
+    document.querySelector('body')
+    .insertBefore(makeHeader(), document.querySelector('body').firstChild);
     document.querySelector('main')
     .insertBefore(Categorias(), document.querySelector('main').firstChild);
         

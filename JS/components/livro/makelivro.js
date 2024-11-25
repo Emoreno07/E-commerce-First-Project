@@ -13,10 +13,10 @@ export default function MakeBook(imgSource, title, author,rating = 0, qtaPaginas
                             <p class="autor">${author}</p>
                         </div>` ;
 
-    const livroCarrinho = `<div class="products_carrinho">
+    const livroCarrinho = `<div class="flex-container flex-center product-carrinho">
                                 <img class="imgs_carrinho" src="${imgSource}" alt="" srcset="">
                                 <p class="descricao_carrinho">${title} : ${author} </p>
-                                <p class="preco_carrinho">preco: ${prize}R$</p>
+                                <p class="preço-item-carrinho">preço: ${prize}R$</p>
                             </div>`;
 
     const livroUnico = `<section class="flex-container flex-center area-livro-unico">

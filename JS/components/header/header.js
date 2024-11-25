@@ -4,25 +4,25 @@ export default function makeHeader(){
     const currentPage = GetCurrentLocationPath();
     const carrinhoItems = (localStorage.getItem('carrinho') === null) ? 0 : JSON.parse(localStorage.getItem('carrinho')).items.length
 
-    const voltar = ` <div class="flex-container flex-center flex-column area-voltar" onclick='location.href = document.referrer'>
+    const voltar = ` <div class="flex-container flex-center flex-column last-area" onclick='location.href = document.referrer'>
                         <img src="../Images/arrow-left.png" alt="">
                         <p>Voltar</p>
                     </div>`
                     
-    const carrinho = `  <div class="flex-container flex-center flex-column area-carrinho" onclick="location.href= '/pages/carrinho.html'">
+    const carrinho = `  <div class="flex-container flex-center flex-column last-area" onclick="location.href= '/pages/carrinho.html'">
                             <img src="/Images/carrinho.png" alt="" id="carrinho_img">
-                            <p>Itens no carrinho: ${carrinhoItems}</p>
+                            <p><strong>Itens no carrinho: </strong>${carrinhoItems}</p>
                         </div>
     `
     const lastSection = currentPage === 'carrinho' ? voltar : carrinho;
     //mais seguro que innerHTML
     return new DOMParser().parseFromString(`
         <header class="flex-container">
-            <div class="flex-container flex-center grow Logo" onclick="window.location.href = '/index.html'">
-                <img class="flex-container" src="/Images/logo.png">
+            <div class="flex-container flex-center grow logo" onclick="window.location.href = '/index.html'">
+                <img src="/Images/logo.png">
                 <h1>EM-BOOKS</h1>
             </div>
-            <nav class="flex-container flex-column flex-center">
+            <nav class="flex-container flex-column flex-center navigation">
                 <div class=" flex-container flex-center grow navigation_options">
                     <p class='${currentPage === 'devolução'? "current-page" : ''}'><a href="#">Devoluções e pedidos</a></p>
                     <p class='${currentPage === 'suporte'? "current-page" : ''}'><a href="#">suporte</a></p>
@@ -30,7 +30,7 @@ export default function makeHeader(){
                 <div class="flex-container flex-center grow navigation_options">
                     <p class='${currentPage === 'vendidos'? "current-page" : ''}'><a href="#">Mais Vendidos</a></p>
                     <p class='${currentPage === 'Todos'? "current-page" : ''}'><a href="/pages/Todos.html">Todos os livros</a></p>
-                    <p class='${currentPage === 'sobre'? "current-page" : ''}' onclick="true"><a href="/pages/sobre.html">Sobre nós</a></p>
+                    <p class='${currentPage === 'sobre'? "current-page" : ''}'><a href="/pages/sobre.html">Sobre nós</a></p>
                 </div>
             </nav>
             <div class="flex-container flex-center flex-column login" onclick='location.href'>

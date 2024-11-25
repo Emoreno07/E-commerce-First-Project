@@ -1,9 +1,9 @@
-import Categorias from "./components/categorias/categorias.js"
 import makeHeader from "./components/header/header.js";
-import { bancoDeLivros } from "./banco.js";
+import MakeFooter from "./components/footer/footer.js";
+
 document.querySelector('body').onload = () => {
-    document.querySelector('.container')
-    .insertBefore(makeHeader(), document.querySelector('.container').firstChild);
-    document.querySelector('main')
-    .insertBefore(Categorias(), document.querySelector('main').firstChild);
+    document.querySelector('body')
+    .insertBefore(makeHeader(), document.querySelector('body').firstChild);
+    document.querySelector('body')
+    .appendChild(MakeFooter());
 }

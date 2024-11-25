@@ -1,8 +1,8 @@
 .banners{
     cursor: -webkit-grab;
     margin-top: 5%;
-    width: 90%;
-    height: 400px;
+    width: 80%;
+    height: fit-content;
 }
 .banners img{
     object-fit: contain;
@@ -10,21 +10,24 @@
     height: 100%;
 }
 .titulo-tipos-livros{
+
     width: 50%;
     background-color: white;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 5%;
     box-shadow: 1px 5px 10px rgba(128, 128, 128, 0.514);
 }
 .conjunto-de-livros{
-    background-color: white;
-    justify-content: space-around;
-    margin-top: 1%;
+    gap: 2rem 7rem ;
+    flex-wrap: wrap;
+    margin-top: 30px;
     width: 90%;
-    height: 20%;
-    border-radius: 5px;
-    box-shadow: 3px 3px #00000036;
+    min-height: 20%;
 }
-
+@media only screen and (max-width: 1300px){
+    .titulo-tipos-livros{
+        width: 80%;
+    }
+}
 
 

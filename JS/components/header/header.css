@@ -1,20 +1,23 @@
 header{
     width: 100%;
-    height: 150px;
+    min-height: 150px;
     border-bottom: solid 2px #000;
     background-color: #FFF;
+}
+header *{
+    text-align: center;
 }
 nav{
     flex: 2;
 }
-nav *{
-    text-align: center;
-}
-.Logo{
+.logo{
     min-height: inherit;
-
 }
-.Logo *{
+.logo img{
+    width: 150px;
+    height: auto;
+}
+.logo *{
     cursor: grab;
 }
 .navigation_options{
@@ -28,14 +31,27 @@ nav *{
 }
 .login img{
     background-color: rgba(192,192,192,0.5);
-    width: 100px;
+    width: 75px;
     height: auto;
     border-radius: 50%;
 }
-.area-carrinho, .area-voltar{
+.last-area{
     flex: 0.5;
 }
-.area-voltar img{
-   width: 100px;
+.last-area img{
+   width: 75px;
    height: auto;
+}
+@media only screen and (max-width: 1300px){
+    .logo{
+        flex-direction: column;
+    }
+    .logo img{
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .flex-container.navigation{
+        display: none;
+    }
 }
