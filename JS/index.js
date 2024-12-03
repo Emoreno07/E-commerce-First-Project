@@ -6,6 +6,7 @@ import MakeFooter from "./components/footer/footer.js";
 import { bancoDeLivros } from "./banco.js";
 import MakeBook from "./components/livro/makelivro.js";
 import addClickOnLivro from "../utils/click.js";
+import BarraMobile from "./components/barraMobile/barraMobile.js";
 const imagesNovidades = bancoDeLivros[0];
 
 const imagesMaisVendidos = bancoDeLivros[1];
@@ -18,9 +19,10 @@ const imagesPodeSerDoSeuInteresse = bancoDeLivros[3];
 document.getElementsByTagName('body')[0].onload = function(){
     document.querySelector('body')
     .insertBefore(makeHeader(), document.querySelector('body').firstChild);
+    document.querySelector('body')
+    .insertBefore(BarraMobile(), document.querySelector('body').firstChild);
     document.querySelector('main')
     .insertBefore(Categorias(), document.querySelector('main').firstChild);
-        
     //colocando os produtos nas categorias de livros
     
     imagesNovidades.images.forEach((element, index) =>{

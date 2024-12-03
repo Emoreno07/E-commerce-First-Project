@@ -3,7 +3,7 @@
 @import "/JS/components/categorias/categorias.css";
 @import "/JS/components/livro/makelivro.css";
 @import "/JS/components/footer/footer.css";
-
+@import "/JS/components//barraMobile/barraMobile.css";
 @font-face {
     font-family: 'Poppins-Regular';
     src: url('/fonts/Poppins/Poppins-Regular.ttf');
@@ -39,6 +39,7 @@
 body, html{
     width: 99vw;
     min-height: 100vh;
+    position: relative
 }
 a{
     font-size: var(--font-text);

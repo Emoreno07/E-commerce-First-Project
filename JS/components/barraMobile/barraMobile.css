@@ -1,0 +1,40 @@
+.barra-mobile{
+    transform: translateX(-100%);
+    transition: all 0.5s;
+    flex-direction: column;
+    position: absolute;
+    width: 40%;
+    height: fit-content;
+    background-color: #FFF;
+    min-height: 100vh;
+    row-gap: 0.5rem;
+}
+.barra-mobile *{
+    text-align: center;
+    align-items: center;
+
+}
+.barra-mobile h2{
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s;
+    border-bottom: dotted 2px #000;
+}
+.barra-mobile h2:hover{
+    color: #FFF;
+    background-color: gray;
+}
+.barra-mobile img{
+    width: 40px;
+    height: 40px;
+}
+@media only screen and (min-width:900px){
+    .flex-container.barra-mobile{
+        display: none;
+    }
+}
+@media only screen and (max-width:600px){
+    .flex-container.barra-mobile{
+        width: 60%;
+    }
+}

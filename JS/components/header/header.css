@@ -42,6 +42,15 @@ nav{
    width: 75px;
    height: auto;
 }
+.hamburguer{
+    display: none;
+    flex: 0.5;
+    
+}
+.hamburguer svg{
+    width: 75px;
+    height: 75px;
+}
 @media only screen and (max-width: 1300px){
     .logo{
         flex-direction: column;
@@ -52,6 +61,14 @@ nav{
 }
 @media only screen and (max-width: 900px){
     .flex-container.navigation{
+        display: none;
+    }
+    .hamburguer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex-container.login{
         display: none;
     }
 }

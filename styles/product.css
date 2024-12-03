@@ -57,7 +57,7 @@
     #livro-unico{
         width: 300px;
     }
-    p,h2{
+    .area-livro-unico p,h2{
         width: 100%;
         text-align: center;
     }
