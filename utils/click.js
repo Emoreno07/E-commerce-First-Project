@@ -6,7 +6,8 @@ export default function addClickOnLivro(livros){
                 'titulo' : '',
                 "autor" : '',
                 'rating' : 0,
-                'paginas': 0
+                'paginas': 0,
+                'preco' : 0,
             }
 
             //não consegui desenvolver uma melhor lógica que esta
@@ -28,10 +29,13 @@ export default function addClickOnLivro(livros){
                     {
                         json.rating = children.innerHTML
                     }
-                else if(children.className === 'Paginas')
+                else if(children.className === 'paginas')
                     {
                         json.paginas = children.innerHTML
                     }
+                else if(children.className === 'price'){
+                    json.preco = children.innerHTML
+                }
             }
             //guarda as informações e deixa na página de produto
             localStorage.setItem('CurrentProduct',JSON.stringify(json))

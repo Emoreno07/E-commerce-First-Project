@@ -17,13 +17,6 @@
     margin-top: 5%;
     box-shadow: 1px 5px 10px rgba(128, 128, 128, 0.514);
 }
-.conjunto-de-livros{
-    gap: 2rem 7rem ;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    width: 90%;
-    min-height: 20%;
-}
 @media only screen and (max-width: 1300px){
     .titulo-tipos-livros{
         width: 80%;

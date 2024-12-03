@@ -33,7 +33,7 @@ export default function makeHeader(){
                     <p class='${currentPage === 'sobre'? "current-page" : ''}'><a href="/pages/sobre.html">Sobre nós</a></p>
                 </div>
             </nav>
-            <div class="flex-container flex-center flex-column login" onclick='location.href'>
+            <div class="flex-container flex-center flex-column login">
                 <img src="/Images/user.png" alt="login">
                 <p><a href="/pages/Login.html">fazer login</a></p>
             </div>

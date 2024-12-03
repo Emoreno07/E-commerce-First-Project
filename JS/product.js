@@ -17,7 +17,7 @@ document.getElementsByTagName('body')[0].onload = () =>{
             selected_product.autor,
             selected_product.rating,
             selected_product.paginas,
-            Math.trunc(Math.random() * 100)
+            selected_product.preco
         )
     ,document.querySelector('.area-outros-livros'))
     let items = {

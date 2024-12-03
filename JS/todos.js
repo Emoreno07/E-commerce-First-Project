@@ -25,7 +25,8 @@ document.querySelector('body').onload = () =>{
                             todosOsLivros[i].nome[j],
                             todosOsLivros[i].autores[j],
                             ((Math.random() + 1) * 2),
-                            todosOsLivros[i].Paginas[j]
+                            todosOsLivros[i].Paginas[j],
+                            ((Math.random() + 1) * 100)
                         )
                     )
                 }

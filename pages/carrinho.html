@@ -8,30 +8,16 @@
     <link rel="stylesheet" href="../styles/global.css">
 </head>
 <body>
-    <main class="flex-container">
+    <!--para ver o conteudo do header, veja header.js-->
+    <main class="flex-container main-carrinho">
         <section class="flex-container flex-column grow itens-carrinho">
             <h1>Carrinho</h1>
-            <!-- 
-            <div class="products_carrinho">
-                <img class="imgs_carrinho" src="../Images/A 5 passos de Voce.jpg" alt="" srcset="">
-                <p id="descricao_carrinho">Nome do livro + Autor</p>
-                <p id="preco_carrinho">preco: 100R$</p>
-            </div>
-            <div class="products_carrinho">
-                <img class="imgs_carrinho" src="../Images/A 5 passos de Voce.jpg" alt="" srcset="">
-                <p id="descricao_carrinho">Nome do livro</p>
-                <p id="preco_carrinho">preco: 100R$</p>
-            </div>
-            <div class="products_carrinho">
-                <img class="imgs_carrinho" src="../Images/A 5 passos de Voce.jpg" alt="" srcset="">
-                <p id="descricao_carrinho">Nome do livro</p>
-                <p id="preco_carrinho">preco: 100R$</p>
-            </div> -->
+            <!--para ver os livros do carrinho, veja makelivro.js-->
         </section>
         <section class="flex-container flex-column grow carrinho-preço">
             <p id="valor"><strong>Valor:</strong></p>
             <p id="frete"><strong>Frete:</strong></p>
-            <p id="valor_total"><strong>Valor Total:</strong></p>
+            <strong><p id="valor_total">Valor Total: </p></strong>
             <form class="flex-container flex-center flex-column">
                 <h2>Coloque suas informações</h2>
                     <div class="flex-container flex-center input-area">
@@ -69,7 +55,7 @@
             </form>
         </section> 
     </main>
-        <!--para ver o conteudo do header, veja header.js-->
+        
         
 </body>
 <script type="module" src="../JS/carrinho.js"></script>

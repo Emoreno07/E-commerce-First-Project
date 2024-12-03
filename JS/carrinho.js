@@ -29,15 +29,16 @@ document.querySelector('body').onload = () =>{
                 )
             }
     }
-    var total_livros = 0
-    document.querySelectorAll('.preco_carrinho').forEach((element,index) =>{
-       total_livros += parseInt(element.innerHTML.replace('Preco: ','').replace('R$',''))
+    let total_livros = 0
+    document.querySelectorAll('.preço-item-carrinho').forEach((element,index) =>{
+       total_livros += parseFloat(element.innerHTML.match(/\d+(\.\d{0,2})?/g)[0])
     })
     const valor = document.querySelector("#valor")
+    console.log(total_livros)
     valor.innerHTML += ` ${total_livros}R$`
     const frete = document.querySelector('#frete')
     frete.innerHTML +=  ` ${Math.round(Math.random() * 50)}R$`
-    const total = parseInt(frete.innerHTML.replace('R$','').replace('Frete: ','')) + parseInt(valor.innerHTML.replace('R$','').replace('Valor: ',''))
+    const total = parseInt(frete.innerHTML.match(/\d+(\.\d{0,2})?/g)[0]) + parseInt(valor.innerHTML.match(/\d+(\.\d{0,2})?/g)[0])
     document.querySelector('#valor_total').innerHTML += `${total}R$`
     
     document.querySelector('#button-pagar').addEventListener('click', function(event){

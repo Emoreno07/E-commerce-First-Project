@@ -28,3 +28,12 @@
 .link-with-text{
     width: 100%;
 }
+@media only screen and (max-width:900px){
+    .area-login{
+        width: 300px;
+        height: 450px;
+    }
+    .area-login h2{
+        text-align: center;
+    }
+}

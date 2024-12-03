@@ -1,1 +1,1 @@
-"Dont read me uh" 
+"My first school Project as Web Developer. learning project" 

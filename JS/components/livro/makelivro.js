@@ -3,6 +3,7 @@ import CreateStars from "../../../utils/stars.js";
 export default function MakeBook(imgSource, title, author,rating = 0, qtaPaginas = 0, prize = 0){
     const path = GetCurrentLocationPath();
     const livroComum = `<div class=" flex-container flex-center flex-column livro" id="${qtaPaginas}">
+                            <span class="price">${Math.round(prize)}</span>
                             <span class="rating">${rating}</span>
                             <span class="paginas">${qtaPaginas}</span>
                             <img src="${imgSource}" class="imglivro"   alt="" srcset="">
@@ -15,8 +16,8 @@ export default function MakeBook(imgSource, title, author,rating = 0, qtaPaginas
 
     const livroCarrinho = `<div class="flex-container flex-center product-carrinho">
                                 <img class="imgs_carrinho" src="${imgSource}" alt="" srcset="">
-                                <p class="descricao_carrinho">${title} : ${author} </p>
-                                <p class="preço-item-carrinho">preço: ${prize}R$</p>
+                                <p class="flex-container flex-center descricao_carrinho">${title} : ${author} </p>
+                                <p class="flex-container flex-center preço-item-carrinho">preço: ${prize}R$</p>
                             </div>`;
 
     const livroUnico = `<section class="flex-container flex-center area-livro-unico">
@@ -27,14 +28,19 @@ export default function MakeBook(imgSource, title, author,rating = 0, qtaPaginas
                                 ${CreateStars(rating)}
                                 </div>
                                 <p id="avaliações">avaliações: 0</p>
-                                <p id="preco"><strong>Preço: ${prize}</strong></p>               
+                                <p id="preco"><strong>Preço: ${prize}R$</strong></p>               
                             </div>
                             <div class="flex-container info-livro">
                                 <h2>${title}</h2>
-                                <p class="info-livro-special-p">${author}</p>
-                                <p class="info-livro-special-p">${qtaPaginas} Páginas</p>
-                                <p id="Sinopse"><strong>SINOPSE</strong> 
-                                    UMa Sinopse Aqui</p>    
+                                <div class="flex-container">
+                                    <p class="info-livro-special-p">${author}</p>
+                                    <p class="info-livro-special-p">${qtaPaginas} Páginas</p>
+                                </div>
+                                
+                                <p id="Sinopse">
+                                <strong>SINOPSE</strong> 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusantium et error velit, iure assumenda odit minus? Ratione corrupti aspernatur, nam iste id eveniet, mollitia aut aliquid excepturi sed voluptatem?
+                                </p>    
                                 <button id="add-carrinho">Adicionar ao Carrinho</button>                            
                             </div>
                             

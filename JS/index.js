@@ -30,7 +30,8 @@ document.getElementsByTagName('body')[0].onload = function(){
                 imagesNovidades.nome[index],
                 imagesNovidades.autores[index],
                 ((Math.random() + 1) * 2),
-                imagesNovidades.Paginas[index]
+                imagesNovidades.Paginas[index],
+                ((Math.random() + 1) * 100)
             )
         )
     })
@@ -42,7 +43,8 @@ document.getElementsByTagName('body')[0].onload = function(){
                 imagesMaisVendidos.nome[index],
                 imagesMaisVendidos.autores[index],
                 ((Math.random() + 1) * 2),
-                imagesMaisVendidos.Paginas[index]
+                imagesMaisVendidos.Paginas[index],
+                ((Math.random() + 1) * 100)
             )
         )
         
@@ -54,7 +56,8 @@ document.getElementsByTagName('body')[0].onload = function(){
                 imagesInternacionais.nome[index],
                 imagesInternacionais.autores[index],
                 ((Math.random() + 1) * 2),
-                imagesInternacionais.Paginas[index]
+                imagesInternacionais.Paginas[index],
+                ((Math.random() + 1) * 100)
             )
         )
     })
@@ -65,7 +68,8 @@ document.getElementsByTagName('body')[0].onload = function(){
                 imagesPodeSerDoSeuInteresse.nome[index],
                 imagesPodeSerDoSeuInteresse.autores[index],
                 ((Math.random() + 1) * 2),
-                imagesPodeSerDoSeuInteresse.Paginas[index]
+                imagesPodeSerDoSeuInteresse.Paginas[index],
+                ((Math.random() + 1) * 100)
             )
         )
     })
