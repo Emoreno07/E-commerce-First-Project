@@ -1,4 +1,4 @@
-
+Projeto feito com propósito de aprendizado escolar
 <h1>USANDO O SITE</h1>
 <p>deszipe o arquivo e abra a pasta E-commerce-first-project no cmd</p>
 
