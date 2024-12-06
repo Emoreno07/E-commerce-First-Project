@@ -1,6 +1,10 @@
 Projeto feito com propósito de aprendizado escolar
 <h1>USANDO O SITE</h1>
-<p>deszipe o arquivo e abra a pasta E-commerce-first-project no cmd</p>
+
+```bash
+git clone https://github.com/Emoreno07/E-commerce-First-Project.git
+cd E-commerce-First-Project
+```
 
 <h3>NPM</h3>
 rode <code>http-server</code> dentro da pasta
