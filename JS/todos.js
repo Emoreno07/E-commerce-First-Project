@@ -11,13 +11,14 @@ import BarraMobile from "./components/barraMobile/barraMobile.js";
 const todosOsLivros = bancoDeLivros;
 
 document.querySelector('body').onload = () =>{
-    document.querySelector('.container')
-    .insertBefore(makeHeader(), document.querySelector('.container').firstChild);
+    //adiciona os componentes no body e na pagina
+    document.querySelector('body')
+    .insertBefore(makeHeader(), document.querySelector('body').firstChild);
     document.querySelector('body')
     .insertBefore(BarraMobile(), document.querySelector('body').firstChild);
     document.querySelector('main')
     .insertBefore(Categorias(), document.querySelector('main').firstChild);
-    
+    //coloca todos os livros na página
     for(let i = 0; i < todosOsLivros.length; i++)
         {
             for(let j = 0; j < todosOsLivros[i].images.length; j++)
@@ -34,8 +35,11 @@ document.querySelector('body').onload = () =>{
                     )
                 }
         }
+        //click de direcionar na página de product
         const livros = document.querySelectorAll('.livro')
         addClickOnLivro(livros)
+
+        //adicionar o footer
         document.querySelector('body')
         .appendChild(MakeFooter())
 }

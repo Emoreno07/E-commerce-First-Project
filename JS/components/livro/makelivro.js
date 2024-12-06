@@ -2,6 +2,7 @@ import GetCurrentLocationPath from "../../../utils/Path.js";
 import CreateStars from "../../../utils/stars.js";
 export default function MakeBook(imgSource, title, author,rating = 0, qtaPaginas = 0, prize = 0){
     const path = GetCurrentLocationPath();
+    //livro colocado nas páginas de index e todos.hmtl
     const livroComum = `<div class=" flex-container flex-center flex-column livro" id="${qtaPaginas}">
                             <span class="price">${Math.round(prize)}</span>
                             <span class="rating">${rating}</span>
@@ -13,13 +14,13 @@ export default function MakeBook(imgSource, title, author,rating = 0, qtaPaginas
                             <p class="titulo">${title}</p>
                             <p class="autor">${author}</p>
                         </div>` ;
-
+//livro do carrinho
     const livroCarrinho = `<div class="flex-container flex-center product-carrinho">
                                 <img class="imgs_carrinho" src="${imgSource}" alt="" srcset="">
                                 <p class="flex-container flex-center descricao_carrinho">${title} : ${author} </p>
                                 <p class="flex-container flex-center preço-item-carrinho">preço: ${prize}R$</p>
                             </div>`;
-
+    //livro do product.html
     const livroUnico = `<section class="flex-container flex-center area-livro-unico">
                             <div class="flex-container flex-center flex-column livro" id="livro-unico">
                                 <img id="img-livro-produto" src="${imgSource}" srcset="">
@@ -46,6 +47,7 @@ export default function MakeBook(imgSource, title, author,rating = 0, qtaPaginas
                             
                         </section> 
                         `
+     //verifica que livro a função retornará de acordo com o a páagina
     const whichBook = () =>{
         if(path === 'carrinho'){
             return livroCarrinho

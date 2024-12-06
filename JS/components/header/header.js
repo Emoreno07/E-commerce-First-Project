@@ -14,6 +14,7 @@ export default function makeHeader(){
                             <p><strong>Itens no carrinho: </strong>${carrinhoItems}</p>
                         </div>
     `
+    //caso a página seja o carrinho, coloca o botão de voltar,se não coloca o de carrinho
     const lastSection = currentPage === 'carrinho' ? voltar : carrinho;
     //mais seguro que innerHTML
     return new DOMParser().parseFromString(`

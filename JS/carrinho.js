@@ -33,7 +33,8 @@ document.querySelector('body').onload = () =>{
             }
     }
     let total_livros = 0
-    document.querySelectorAll('.preço-item-carrinho').forEach((element,index) =>{
+    document.querySelectorAll('.preço-item-carrinho').forEach((element) =>{
+        //pega o número dentro do texto: Preço: x.xR$
        total_livros += parseFloat(element.innerHTML.match(/\d+(\.\d{0,2})?/g)[0])
     })
     const valor = document.querySelector("#valor")

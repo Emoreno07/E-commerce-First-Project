@@ -23,5 +23,3 @@ code . (precisa estar configurado no PATH para funcionar)
 ```
 <p>ou selecione a pasta e abra com vscode no explorador de arquivos e depois abrir index.html no live-server</p>
 
-
-
